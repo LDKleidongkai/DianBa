@@ -1,3 +1,4 @@
+
 //
 //  OrderController.m
 //  DianBa
@@ -23,6 +24,8 @@
 #import "OrderMenu.h"
 // 店铺详情
 #import "ShopDetailsController.h"
+// 菜品详情
+#import "DetailsTableViewController.h"
 
 @interface OrderController ()<UITableViewDelegate,UITableViewDataSource>
 /** 门店菜品数组 */
@@ -162,6 +165,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.navigationController pushViewController:[[DetailsTableViewController alloc] init] animated:YES];
 }
 
 #pragma mark - 购物车
