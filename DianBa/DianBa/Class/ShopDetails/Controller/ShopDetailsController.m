@@ -46,15 +46,10 @@
 - (void)loadData{
     
     [ShopDetailsData shopDetailsWithDetailsStoreId:@"1" success:^(ShopDetailsResult *shopDetails) {
-        NSArray *array = @[
-            [NSString stringWithFormat:@"配送费：%@",shopDetails.distribut],
-            [NSString stringWithFormat:@"简介：%@",shopDetails.Dstore_con],
-            [NSString stringWithFormat:@"品类：%@",shopDetails.menu_attr],
-            [NSString stringWithFormat:@"地址：%@",shopDetails.store_address],
-            @"营业时间：",
-            @"营业执照",
-            @"餐饮服务许可证"];
+        NSArray *array = @[shopDetails.distribut,shopDetails.Dstore_con,shopDetails.menu_attr,shopDetails.store_address,@"营业时间：",@"营业执照",@"餐饮服务许可证"];
+        NSLog(@"%@",[NSString stringWithFormat:@"配送费：%@",shopDetails.distribut]);
         [self.messageArr addObjectsFromArray:array];
+        NSLog(@"count == %ld",self.messageArr.count);
     } failure:^(NSError *error) {
         NSLog(@"%@",error);
     }];
