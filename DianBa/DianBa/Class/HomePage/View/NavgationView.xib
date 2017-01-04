@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavgationView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrows" translatesAutoresizingMaskIntoConstraints="NO" id="BaG-kX-QnI">
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="7" id="278-ED-jVm"/>
+                        <constraint firstAttribute="height" constant="7" id="3LG-2o-PL5"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="11" id="FSA-QH-WVJ"/>
+                        <constraint firstAttribute="width" constant="11" id="UfE-sP-657"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXC-T4-IFZ">
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INa-NX-kpN">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="vDd-Vn-4Hq"/>
+                        <constraint firstAttribute="width" constant="25" id="xIa-I3-6rH"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="more"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PC-af-Y4k">
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="雷冬凯">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iXC-T4-IFZ" secondAttribute="bottom" constant="5" id="0vs-wF-PhG"/>
+                <constraint firstItem="0PC-af-Y4k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="351-ja-Lsz"/>
+                <constraint firstItem="iXC-T4-IFZ" firstAttribute="leading" secondItem="BaG-kX-QnI" secondAttribute="trailing" constant="28" id="9uh-4P-npd"/>
+                <constraint firstItem="INa-NX-kpN" firstAttribute="leading" secondItem="iXC-T4-IFZ" secondAttribute="trailing" constant="26" id="DAK-DG-Dpm"/>
+                <constraint firstAttribute="trailing" secondItem="INa-NX-kpN" secondAttribute="trailing" constant="15" id="Lf8-nn-dBq"/>
+                <constraint firstItem="BaG-kX-QnI" firstAttribute="leading" secondItem="0PC-af-Y4k" secondAttribute="trailing" constant="7" id="MYj-3O-t2m"/>
+                <constraint firstItem="iXC-T4-IFZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Ubq-J1-Pow"/>
+                <constraint firstItem="INa-NX-kpN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="XHV-GQ-Osf"/>
+                <constraint firstItem="0PC-af-Y4k" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="c3F-Pe-R1B"/>
+                <constraint firstItem="BaG-kX-QnI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="gBl-I8-iPy"/>
+                <constraint firstAttribute="bottom" secondItem="0PC-af-Y4k" secondAttribute="bottom" constant="10" id="qgv-Di-QXu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addButton" destination="INa-NX-kpN" id="3lX-ok-yyE"/>
+                <outlet property="cityButton" destination="0PC-af-Y4k" id="Siz-Cc-juK"/>
+                <outlet property="searchButton" destination="iXC-T4-IFZ" id="dSR-tK-L42"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrows" width="10" height="6"/>
+        <image name="more" width="15" height="15"/>
+    </resources>
+</document>
