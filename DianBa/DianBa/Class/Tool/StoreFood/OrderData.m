@@ -21,7 +21,7 @@
     [MHHttpTool Post:@"http://www.kdiana.com/index.php/Before/Orders/menu_list" parameters:params.mj_keyValues success:^(id responseObject) {
         
         OrderResult *result = [OrderResult mj_objectWithKeyValues:responseObject];
-        
+        NSLog(@"%@",result);
         if (success) {
             success(result);
         }

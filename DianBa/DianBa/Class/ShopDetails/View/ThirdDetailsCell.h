@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommentDetails.h"
 
 @interface ThirdDetailsCell : UITableViewCell
 
@@ -19,5 +20,6 @@
 /** 评论 */
 @property (strong, nonatomic) IBOutlet UILabel *commentLabel;
 
+@property (nonatomic, strong) CommentDetails *commentD;
 
 @end

@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "SDCycleScrollView.h"
+#import "ShopDetailsResult.h"
 
 @interface ShopDtailsHeader : UIView
 
 @property (nonatomic, strong) SDCycleScrollView *headerScroll;
+
+@property (nonatomic, strong) ShopDetailsResult *result;;
 
 @end

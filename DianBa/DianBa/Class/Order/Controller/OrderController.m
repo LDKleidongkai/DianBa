@@ -227,10 +227,10 @@
             }];
         }else{
             [UIView animateWithDuration:0.5 animations:^{
-                [self.view addSubview:_orderView.returnBtn];
-                [self.view addSubview:_orderView.collectionBtn];
                 [self hiddenNavigationBar];
             }];
+            [self.view addSubview:_orderView.returnBtn];
+            [self.view addSubview:_orderView.collectionBtn];
         }
     }
     else if (scrollView.tag == 2){

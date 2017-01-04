@@ -32,7 +32,7 @@
             <connections>
                 <outlet property="headerBtn" destination="2bD-Ad-jz0" id="Kly-3g-8Up"/>
             </connections>
-            <point key="canvasLocation" x="-790" y="-3"/>
+            <point key="canvasLocation" x="-819" y="-61"/>
         </view>
     </objects>
 </document>

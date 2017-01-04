@@ -43,4 +43,5 @@
 /** 回复详情 */
 @property (nonatomic, strong) NSArray *comment;
 
+
 @end

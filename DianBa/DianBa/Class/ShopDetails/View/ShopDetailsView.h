@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShopDetailsResult.h"
 
 @interface ShopDetailsView : UIView
 
@@ -24,5 +25,6 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *table;
 
+@property (nonatomic, strong) ShopDetailsResult *detailsResult;
 
 @end

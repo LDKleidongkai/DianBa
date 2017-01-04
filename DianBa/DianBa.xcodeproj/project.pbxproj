@@ -450,10 +450,10 @@
 		EF24DA381E132FD0006AA5E2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				EFF3E29B1E1698510057E775 /* Tool */,
 				002C36CA1E1CCEC0006998B1 /* Food Details */,
 				187C01F81E1725050035C161 /* WSStarRating */,
 				187C01EE1E1724FD0035C161 /* PopoverView */,
-				EFF3E29B1E1698510057E775 /* Tool */,
 				EF65716E1E1A773400255B06 /* ShopDetails */,
 				EF24DA791E132FD0006AA5E2 /* TakeOut */,
 				EF24DA391E132FD0006AA5E2 /* HomePage */,
@@ -913,9 +913,9 @@
 		EFF3E29B1E1698510057E775 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				EF532D581E1BE00D004EF262 /* ShopDetails */,
 				EFF3E29C1E1698510057E775 /* Http */,
 				EFF3E29D1E1698510057E775 /* StoreFood */,
+				EF532D581E1BE00D004EF262 /* ShopDetails */,
 			);
 			path = Tool;
 			sourceTree = "<group>";

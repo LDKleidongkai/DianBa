@@ -9,6 +9,7 @@
 #import "ShopDetailsData.h"
 #import "ShopDetailsParam.h"
 #import "ShopDetailsResult.h"
+#import "CommentDetails.h"
 
 @implementation ShopDetailsData
 
@@ -36,6 +37,7 @@
         result.count_rated = [responseObject objectForKey:@"count_rated"];
         result.turnover = [responseObject objectForKey:@"turnover"];
         result.comment = [responseObject objectForKey:@"comment"];
+        
         if (success) {
             success(result);
         }

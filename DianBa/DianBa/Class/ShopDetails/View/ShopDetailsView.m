@@ -21,7 +21,6 @@
     if (_star == nil) {
         _star = [[StarsView alloc] initWithStarSize:CGSizeMake(11, 11) space:5 numberOfStar:5];
         _star.frame = CGRectMake(0, 0, 71, 11);
-        _star.score = 3.4;
     }
     return _star;
 }
@@ -40,6 +39,13 @@
     _backgroundView.backgroundColor = [UIColor colorWithRed:0/250.0 green:0/250.0 blue:0/250.0 alpha:0.25];
     _starView.backgroundColor = [UIColor clearColor];
     [self.starView addSubview:self.star];
+}
+
+- (void)setDetailsResult:(ShopDetailsResult *)detailsResult{
+    _detailsResult =detailsResult;
+    self.star.score = [detailsResult.star floatValue];
+    self.shopName.text = detailsResult.store_name;
+    self.dealLabel.text = [NSString stringWithFormat:@"成交%@",detailsResult.turnover];
 }
 
 @end
