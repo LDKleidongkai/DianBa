@@ -15,6 +15,9 @@
 		0000BEDD1E1359D200F3A049 /* SearchHistoryRecordfooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000BED41E1359D200F3A049 /* SearchHistoryRecordfooter.m */; };
 		0000BEDE1E1359D200F3A049 /* SearchHistoryRecordfooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0000BED51E1359D200F3A049 /* SearchHistoryRecordfooter.xib */; };
 		0000BEDF1E1359D200F3A049 /* SearchRecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000BED71E1359D200F3A049 /* SearchRecordTableViewCell.m */; };
+		002C36D11E1CCEE2006998B1 /* FoodEvaluateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 002C36CF1E1CCEE2006998B1 /* FoodEvaluateTableViewCell.m */; };
+		002C36D21E1CCEE2006998B1 /* FoodEvaluateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002C36D01E1CCEE2006998B1 /* FoodEvaluateTableViewCell.xib */; };
+		002C36D51E1CCEEB006998B1 /* DetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002C36D41E1CCEEB006998B1 /* DetailsTableViewController.m */; };
 		00D8A5FF1E1615960085441B /* scanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D8A5FE1E1615960085441B /* scanQRViewController.m */; };
 		00E592161E12A75100065BC4 /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00E592151E12A75100065BC4 /* cityGroups.plist */; };
 		187C01E31E1724620035C161 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C01D51E1724620035C161 /* CollectionViewCell.m */; };
@@ -122,6 +125,11 @@
 		0000BED51E1359D200F3A049 /* SearchHistoryRecordfooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchHistoryRecordfooter.xib; sourceTree = "<group>"; };
 		0000BED61E1359D200F3A049 /* SearchRecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRecordTableViewCell.h; sourceTree = "<group>"; };
 		0000BED71E1359D200F3A049 /* SearchRecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchRecordTableViewCell.m; sourceTree = "<group>"; };
+		002C36CE1E1CCEE2006998B1 /* FoodEvaluateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodEvaluateTableViewCell.h; sourceTree = "<group>"; };
+		002C36CF1E1CCEE2006998B1 /* FoodEvaluateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodEvaluateTableViewCell.m; sourceTree = "<group>"; };
+		002C36D01E1CCEE2006998B1 /* FoodEvaluateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodEvaluateTableViewCell.xib; sourceTree = "<group>"; };
+		002C36D31E1CCEEB006998B1 /* DetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsTableViewController.h; sourceTree = "<group>"; };
+		002C36D41E1CCEEB006998B1 /* DetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsTableViewController.m; sourceTree = "<group>"; };
 		009F053588FA4657C3B60710 /* Pods_DianBa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DianBa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D8A5FD1E1615960085441B /* scanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanQRViewController.h; sourceTree = "<group>"; };
 		00D8A5FE1E1615960085441B /* scanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scanQRViewController.m; sourceTree = "<group>"; };
@@ -321,6 +329,42 @@
 			path = DQHotSearch;
 			sourceTree = "<group>";
 		};
+		002C36CA1E1CCEC0006998B1 /* Food Details */ = {
+			isa = PBXGroup;
+			children = (
+				002C36CD1E1CCECD006998B1 /* Model */,
+				002C36CC1E1CCECC006998B1 /* View */,
+				002C36CB1E1CCECB006998B1 /* Controller */,
+			);
+			name = "Food Details";
+			sourceTree = "<group>";
+		};
+		002C36CB1E1CCECB006998B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				002C36D31E1CCEEB006998B1 /* DetailsTableViewController.h */,
+				002C36D41E1CCEEB006998B1 /* DetailsTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		002C36CC1E1CCECC006998B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				002C36CE1E1CCEE2006998B1 /* FoodEvaluateTableViewCell.h */,
+				002C36CF1E1CCEE2006998B1 /* FoodEvaluateTableViewCell.m */,
+				002C36D01E1CCEE2006998B1 /* FoodEvaluateTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		002C36CD1E1CCECD006998B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		187C01D01E1724620035C161 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +450,7 @@
 		EF24DA381E132FD0006AA5E2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				002C36CA1E1CCEC0006998B1 /* Food Details */,
 				187C01F81E1725050035C161 /* WSStarRating */,
 				187C01EE1E1724FD0035C161 /* PopoverView */,
 				EFF3E29B1E1698510057E775 /* Tool */,
@@ -1078,6 +1123,7 @@
 				EFDD079B1E1146C00083C80A /* Main.storyboard in Resources */,
 				EF532D2D1E1B4620004EF262 /* ShopDetailsView.xib in Resources */,
 				EF24DA8E1E132FD0006AA5E2 /* unicode_to_hanyu_pinyin.txt in Resources */,
+				002C36D21E1CCEE2006998B1 /* FoodEvaluateTableViewCell.xib in Resources */,
 				EFF3E2C91E1699160057E775 /* OrderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1145,6 +1191,7 @@
 				EF24DA8D1E132FD0006AA5E2 /* PinyinHelper.m in Sources */,
 				EF24DA811E132FD0006AA5E2 /* CityCollectionCell.m in Sources */,
 				EF24DA841E132FD0006AA5E2 /* MineViewController.m in Sources */,
+				002C36D11E1CCEE2006998B1 /* FoodEvaluateTableViewCell.m in Sources */,
 				EFF3E2B91E16990D0057E775 /* MenuCell.m in Sources */,
 				EF532D2B1E1B4612004EF262 /* ShopDetailsView.m in Sources */,
 				EF24DAA81E1330CE006AA5E2 /* UIBarButtonItem+BarButtonItem.m in Sources */,
@@ -1182,6 +1229,7 @@
 				EF532D111E1B402B004EF262 /* ShopDetailsController.m in Sources */,
 				0000BED81E1359D200F3A049 /* DQHotSearchViewController.m in Sources */,
 				187C02051E1725320035C161 /* HomePageViewController.m in Sources */,
+				002C36D51E1CCEEB006998B1 /* DetailsTableViewController.m in Sources */,
 				EF24DA871E132FD0006AA5E2 /* ChineseInclude.m in Sources */,
 				EF24DA8C1E132FD0006AA5E2 /* PinYinForObjc.m in Sources */,
 				EFF3E2C71E1699160057E775 /* OrderTableView.m in Sources */,
