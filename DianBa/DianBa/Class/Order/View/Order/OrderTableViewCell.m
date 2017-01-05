@@ -29,6 +29,10 @@
         _clickCars(_dropImageView);
     }
     
+    if (self.addBlock) {
+        self.addBlock(_addBlock);
+    }
+    
     if (_number) {
         _number(number);
     }
@@ -46,6 +50,10 @@
     }else{
         _subtractBtn.hidden = YES;
         _numLabel.hidden = YES;
+    }
+    
+    if (self.subBlock) {
+        self.subBlock(_subBlock);
     }
     
     if (_number) {

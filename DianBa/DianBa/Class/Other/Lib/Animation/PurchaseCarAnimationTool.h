@@ -12,7 +12,7 @@ typedef void (^animationFinisnBlock)(BOOL finish);
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface PurchaseCarAnimationTool : NSObject
-@property (strong , nonatomic) CALayer *layer;
+@property (strong, nonatomic) CALayer *layer;
 @property (copy , nonatomic) animationFinisnBlock animationFinisnBlock;
 /**
  *  初始化
