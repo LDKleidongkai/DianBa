@@ -828,7 +828,6 @@
 		EF24DA631E132FD0006AA5E2 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				002F36C31E1CE72D004D3FC3 /* LXSegment */,
 				EF532D2E1E1B4BCB004EF262 /* StarView */,
 				EF532D121E1B42CF004EF262 /* SDCycleScrollView */,
 				EFF3E2D41E1699870057E775 /* Animation */,

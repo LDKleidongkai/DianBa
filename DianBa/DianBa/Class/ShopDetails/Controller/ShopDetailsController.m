@@ -47,13 +47,10 @@
 - (void)loadData{
     [ShopDetailsData shopDetailsWithDetailsStoreId:@"1" success:^(ShopDetailsResult *shopDetails) {
         self.result = shopDetails;
-        NSLog(@"---------------%@",shopDetails);
         NSArray *array = [[NSArray alloc] initWithObjects:shopDetails.distribut,[NSString stringWithFormat:@"简介：%@",shopDetails.Dstore_con],[NSString stringWithFormat:@"菜品：%@",shopDetails.menu_attr],[NSString stringWithFormat:@"地址：%@",shopDetails.store_address],[NSString stringWithFormat:@"营业时间：%@-%@",self.result.business_time_start,self.result.business_time_over],@"营业执照",@"餐饮服务许可证", nil];
         [self.messageArr addObjectsFromArray:array];
         [self.detailsView setDetailsResult:shopDetails];
-//        [self.header setResult:shopDetails];
         [self.commentArr addObjectsFromArray:shopDetails.comment];
-//        NSLog(@"==============%@",self.commentArr);
         [self.detailsView.table reloadData];
     } failure:^(NSError *error) {
         NSLog(@"%@",error);
