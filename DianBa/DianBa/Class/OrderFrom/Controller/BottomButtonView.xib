@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomButtonView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWE-Ys-UOV">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="去 评 价">
+                        <color key="titleColor" red="1" green="0.72941176470588232" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbF-Bo-Gre">
+                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.72941176470588232" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                    <state key="normal" title="再 来 一 单">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gbF-Bo-Gre" secondAttribute="trailing" id="5Tu-Pe-I0u"/>
+                <constraint firstAttribute="bottom" secondItem="eWE-Ys-UOV" secondAttribute="bottom" id="5mg-lv-CJ5"/>
+                <constraint firstItem="gbF-Bo-Gre" firstAttribute="leading" secondItem="eWE-Ys-UOV" secondAttribute="trailing" id="8K7-U4-gWY"/>
+                <constraint firstItem="eWE-Ys-UOV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gax-LD-lnu"/>
+                <constraint firstItem="gbF-Bo-Gre" firstAttribute="width" secondItem="eWE-Ys-UOV" secondAttribute="width" id="IKS-Np-vwk"/>
+                <constraint firstAttribute="bottom" secondItem="gbF-Bo-Gre" secondAttribute="bottom" id="v5q-b1-PKY"/>
+                <constraint firstItem="eWE-Ys-UOV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vKA-AR-ca9"/>
+                <constraint firstItem="gbF-Bo-Gre" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vaA-T4-Ia2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ASingleAgain" destination="gbF-Bo-Gre" id="J6g-ie-vYt"/>
+                <outlet property="ToEvaluate" destination="eWE-Ys-UOV" id="AvR-fu-QgV"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="363"/>
+        </view>
+    </objects>
+</document>

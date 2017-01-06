@@ -8,6 +8,7 @@
 
 #import "MineViewController.h"
 
+
 @interface MineViewController ()
 
 @end
@@ -18,6 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:252/255.0 green:174/255.0 blue:21/255.0 alpha:1.00];
 }
 
 - (void)didReceiveMemoryWarning {
