@@ -39,7 +39,6 @@
 		187C02081E17372F0035C161 /* ffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C02071E17372F0035C161 /* ffViewController.m */; };
 		18C3C9481E1B6F7400D8C00E /* TakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C3C9471E1B6F7400D8C00E /* TakeView.m */; };
 		CF01136A59D8393F1EC27771 /* Pods_DianBa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009F053588FA4657C3B60710 /* Pods_DianBa.framework */; };
-		EF1A38321E1E15EF00E69722 /* RKNotificationHub.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A38311E1E15EF00E69722 /* RKNotificationHub.m */; };
 		EF24DA801E132FD0006AA5E2 /* CityList.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24DA401E132FD0006AA5E2 /* CityList.m */; };
 		EF24DA811E132FD0006AA5E2 /* CityCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24DA441E132FD0006AA5E2 /* CityCollectionCell.m */; };
 		EF24DA821E132FD0006AA5E2 /* CityCollectionHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF24DA461E132FD0006AA5E2 /* CityCollectionHeadView.m */; };
@@ -172,8 +171,6 @@
 		18C3C9461E1B6F7400D8C00E /* TakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeView.h; sourceTree = "<group>"; };
 		18C3C9471E1B6F7400D8C00E /* TakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeView.m; sourceTree = "<group>"; };
 		7AB61EC6EF0A9EF970082E7F /* Pods-DianBa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianBa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DianBa/Pods-DianBa.debug.xcconfig"; sourceTree = "<group>"; };
-		EF1A38301E1E15EF00E69722 /* RKNotificationHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNotificationHub.h; sourceTree = "<group>"; };
-		EF1A38311E1E15EF00E69722 /* RKNotificationHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKNotificationHub.m; sourceTree = "<group>"; };
 		EF24DA3B1E132FD0006AA5E2 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		EF24DA3F1E132FD0006AA5E2 /* CityList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityList.h; sourceTree = "<group>"; };
 		EF24DA401E132FD0006AA5E2 /* CityList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityList.m; sourceTree = "<group>"; };
@@ -454,15 +451,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EF1A382F1E1E15DD00E69722 /* BadgeVaule */ = {
-			isa = PBXGroup;
-			children = (
-				EF1A38301E1E15EF00E69722 /* RKNotificationHub.h */,
-				EF1A38311E1E15EF00E69722 /* RKNotificationHub.m */,
-			);
-			path = BadgeVaule;
-			sourceTree = "<group>";
-		};
 		EF24DA381E132FD0006AA5E2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -673,7 +661,6 @@
 		EF24DA631E132FD0006AA5E2 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				EF1A382F1E1E15DD00E69722 /* BadgeVaule */,
 				EF532D2E1E1B4BCB004EF262 /* StarView */,
 				EF532D121E1B42CF004EF262 /* SDCycleScrollView */,
 				EFF3E2D41E1699870057E775 /* Animation */,
@@ -1219,7 +1206,6 @@
 				EF532D381E1B4BCB004EF262 /* StarView.m in Sources */,
 				EF532CF71E1B2DBC004EF262 /* ShopDtailsHeader.m in Sources */,
 				00D8A5FF1E1615960085441B /* scanQRViewController.m in Sources */,
-				EF1A38321E1E15EF00E69722 /* RKNotificationHub.m in Sources */,
 				EF24DA891E132FD0006AA5E2 /* HanyuPinyinOutputFormat.m in Sources */,
 				EF532D271E1B42CF004EF262 /* SDCycleScrollView.m in Sources */,
 				EFF3E2D81E16999F0057E775 /* PurchaseCarAnimationTool.m in Sources */,

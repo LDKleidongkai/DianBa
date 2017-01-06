@@ -102,6 +102,25 @@
 }
 
 #pragma mark - 购物车
+// 菜品添加和减少
+- (void)footIncreaseOrInduceWithCell:(OrderTableViewCell *)cell indexPath:(NSIndexPath *)indexPath{
+    cell.subBlock = ^ () {
+        ShopCarModel *model = [[ShopCarModel alloc] init];
+        model = self.dataArr[indexPath.row];
+        model.number -= 1;
+        [self.dataArr replaceObjectAtIndex:indexPath.row withObject:model];
+        [self calculateTotalPrice];
+        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",model.number];
+    };
+    cell.addBlock = ^ () {
+        ShopCarModel *model = [[ShopCarModel alloc] init];
+        model = self.dataArr[indexPath.row];
+        model.number += 1;
+        [self.dataArr replaceObjectAtIndex:indexPath.row withObject:model];
+        [self calculateTotalPrice];
+        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",model.number];
+    };
+}
 // 计算总价
 - (void)calculateTotalPrice{
     self.totalPrice = 0;
@@ -109,6 +128,11 @@
         ShopCarModel *model = [[ShopCarModel alloc] init];
         model = self.dataArr[i];
         self.totalPrice += model.price * model.number;
+        if (self.totalPrice > 0) {
+            [self shoppingCarNotHidden];
+        }else{
+            [self shoppingCarHidden];
+        }
     }
     self.orderView.priceLabel.text = [NSString stringWithFormat:@"%ld",self.totalPrice];
 }
@@ -127,15 +151,15 @@
         }];
     };
 }
-// 判断是否显示购物车颜色
-- (void)isShowShoppingCarColorWithModel:(ShopCarModel *)model{
-    if (model.number > 0) {
-        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",model.number];
-        [self shoppingCarNotHidden];
-    }else{
-        [self shoppingCarHidden];
-    }
-}
+//// 判断是否显示购物车颜色
+//- (void)isShowShoppingCarColorWithModel:(ShopCarModel *)model{
+//    if (model.number > 0) {
+//        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",model.number];
+//        [self shoppingCarNotHidden];
+//    }else{
+//        [self shoppingCarHidden];
+//    }
+//}
 // 显示购物车颜色
 - (void)shoppingCarHidden{
     self.orderView.badgeLabel.hidden = YES;
@@ -177,22 +201,8 @@
         [cell setMenu:self.storesArr[indexPath.row]];
         // 购物车效果
         [self shoppingCarAnimationWithCell:cell tableView:tableView indexPath:indexPath];
-        cell.subBlock = ^ () {
-            ShopCarModel *model = [[ShopCarModel alloc] init];
-            model = self.dataArr[indexPath.row];
-            model.number -= 1;
-            [self.dataArr replaceObjectAtIndex:indexPath.row withObject:model];
-            [self calculateTotalPrice];
-            [self isShowShoppingCarColorWithModel:model];
-        };
-        cell.addBlock = ^ () {
-            ShopCarModel *model = [[ShopCarModel alloc] init];
-            model = self.dataArr[indexPath.row];
-            model.number += 1;
-            [self.dataArr replaceObjectAtIndex:indexPath.row withObject:model];
-            [self calculateTotalPrice];
-            [self isShowShoppingCarColorWithModel:model];
-        };
+        // 菜品添加或减少
+        [self footIncreaseOrInduceWithCell:cell indexPath:indexPath];
         return cell;
     }
     
