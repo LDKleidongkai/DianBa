@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyOrderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="酸菜排骨米饭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWV-nr-giV">
+                        <rect key="frame" x="12" y="10" width="170" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="170" id="5WG-tN-sTg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsN-NV-H5Y">
+                        <rect key="frame" x="258" y="10" width="50" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="KbH-ga-s2j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmE-ZK-cLt">
+                        <rect key="frame" x="213" y="10" width="25" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="fX9-CB-vEr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zWV-nr-giV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="6Yp-aF-yyr"/>
+                    <constraint firstItem="DmE-ZK-cLt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ByO-Nc-alm"/>
+                    <constraint firstItem="QsN-NV-H5Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="E6J-qw-J3X"/>
+                    <constraint firstAttribute="bottom" secondItem="DmE-ZK-cLt" secondAttribute="bottom" constant="10" id="Zal-r0-Cwb"/>
+                    <constraint firstAttribute="bottom" secondItem="QsN-NV-H5Y" secondAttribute="bottom" constant="10" id="c2V-6l-P05"/>
+                    <constraint firstAttribute="trailing" secondItem="QsN-NV-H5Y" secondAttribute="trailing" constant="12" id="g1A-LV-awQ"/>
+                    <constraint firstItem="zWV-nr-giV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rx7-xd-0af"/>
+                    <constraint firstAttribute="bottom" secondItem="zWV-nr-giV" secondAttribute="bottom" constant="10" id="yIt-dq-J3H"/>
+                    <constraint firstItem="QsN-NV-H5Y" firstAttribute="leading" secondItem="DmE-ZK-cLt" secondAttribute="trailing" constant="20" id="zZ5-Ea-qaq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="VegetableName" destination="zWV-nr-giV" id="KHU-ri-0ea"/>
+                <outlet property="VegetableNumber" destination="DmE-ZK-cLt" id="Epe-WW-SCz"/>
+                <outlet property="VegetablePrice" destination="QsN-NV-H5Y" id="kz5-dz-YHR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

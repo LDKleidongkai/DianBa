@@ -98,8 +98,6 @@
     
     [self.previewLayer removeFromSuperlayer];
     
-    NSLog(@"%@", metadataObjects);
-    
     // 3. 设置界面显示扫描结果
     
     if (metadataObjects.count > 0)
@@ -109,7 +107,6 @@
         AVMetadataMachineReadableCodeObject *obj = metadataObjects[0];
         
         //
-        NSLog(@"%@", obj.stringValue);
         
     }
 }

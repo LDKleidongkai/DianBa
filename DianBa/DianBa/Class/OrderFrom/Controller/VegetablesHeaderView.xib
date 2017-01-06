@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VegetablesHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peW-fK-bd6">
+                    <rect key="frame" x="12" y="48" width="342" height="1"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="z2W-sR-68X"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kkkkkkkk" translatesAutoresizingMaskIntoConstraints="NO" id="8cQ-nE-yd6">
+                    <rect key="frame" x="12" y="10" width="30" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="BVC-vO-hCT"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15.0"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微动点大饭店西三旗店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvT-nl-5c4">
+                    <rect key="frame" x="52" y="15" width="153" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8cQ-nE-yd6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="atg-yt-RvZ"/>
+                <constraint firstItem="peW-fK-bd6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="b3V-Ii-ZJy"/>
+                <constraint firstItem="hvT-nl-5c4" firstAttribute="centerY" secondItem="8cQ-nE-yd6" secondAttribute="centerY" id="dI4-03-mb8"/>
+                <constraint firstAttribute="trailing" secondItem="peW-fK-bd6" secondAttribute="trailing" constant="12" id="iVr-V9-snu"/>
+                <constraint firstItem="peW-fK-bd6" firstAttribute="top" secondItem="8cQ-nE-yd6" secondAttribute="bottom" constant="10" id="iWv-LT-bRU"/>
+                <constraint firstItem="8cQ-nE-yd6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="lfA-GC-Gvs"/>
+                <constraint firstAttribute="bottom" secondItem="peW-fK-bd6" secondAttribute="bottom" id="sCn-Qi-YO0"/>
+                <constraint firstItem="hvT-nl-5c4" firstAttribute="leading" secondItem="8cQ-nE-yd6" secondAttribute="trailing" constant="10" id="yhF-9I-o7d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="HotelName" destination="hvT-nl-5c4" id="JGt-GG-K8N"/>
+                <outlet property="myImage" destination="8cQ-nE-yd6" id="Q16-yN-2tr"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="257.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kkkkkkkk" width="491" height="300"/>
+    </resources>
+</document>

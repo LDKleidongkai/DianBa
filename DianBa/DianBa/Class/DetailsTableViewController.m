@@ -55,10 +55,10 @@
     
     return cell;
 }
-//
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-//        return 30;
-//}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+        return 30;
+}
 
 #pragma mark -- 购物车
 - (UIButton *)shoppingCartButton{
@@ -69,7 +69,6 @@
         _shoppingCartButton.frame = CGRectMake(ScreenWidth - 40, 28, 28, 28);
         _shoppingCartButton.layer.masksToBounds = YES;
         _shoppingCartButton.layer.cornerRadius = 14;
-        //        _backButton.frame = CGRectMake(0, 0, 28, 28);
         _shoppingCartButton.alpha = 0.7;
         _shoppingCartButton.backgroundColor =[UIColor blackColor];
         [_shoppingCartButton setImage:[UIImage imageNamed:@"shopping-1"] forState:UIControlStateNormal];
@@ -86,12 +85,10 @@
         _backButton.frame = CGRectMake(12, 28, 28, 28);
         _backButton.layer.masksToBounds = YES;
         _backButton.layer.cornerRadius = 14;
-//        _backButton.frame = CGRectMake(0, 0, 28, 28);
         _backButton.alpha = 0.7;
         _backButton.backgroundColor =[UIColor blackColor];
         [_backButton addTarget:self action:@selector(backButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [_backButton setImage:[UIImage imageNamed:@"the-arrow-"] forState:UIControlStateNormal];
-//        _backButton.sd_layout.topSpaceToView(self.tableView,28).leftSpaceToView(self.headView,12).widthIs(28).heightIs(28);
     }
     return _backButton;
 }
