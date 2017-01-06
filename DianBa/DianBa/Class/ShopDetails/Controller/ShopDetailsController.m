@@ -26,6 +26,7 @@
 @property (nonatomic, strong) ShopDetailsResult *result;
 /** 店铺信息数组 */
 @property (nonatomic, strong) NSMutableArray *messageArr;
+@property (nonatomic, strong) NSMutableArray *commentArr;
 @end
 
 @implementation ShopDetailsController
@@ -44,12 +45,16 @@
 
 #pragma mark - 加载数据
 - (void)loadData{
-    
     [ShopDetailsData shopDetailsWithDetailsStoreId:@"1" success:^(ShopDetailsResult *shopDetails) {
-        NSArray *array = @[shopDetails.distribut,shopDetails.Dstore_con,shopDetails.menu_attr,shopDetails.store_address,@"营业时间：",@"营业执照",@"餐饮服务许可证"];
-        NSLog(@"%@",[NSString stringWithFormat:@"配送费：%@",shopDetails.distribut]);
+        self.result = shopDetails;
+        NSLog(@"---------------%@",shopDetails);
+        NSArray *array = [[NSArray alloc] initWithObjects:shopDetails.distribut,[NSString stringWithFormat:@"简介：%@",shopDetails.Dstore_con],[NSString stringWithFormat:@"菜品：%@",shopDetails.menu_attr],[NSString stringWithFormat:@"地址：%@",shopDetails.store_address],[NSString stringWithFormat:@"营业时间：%@-%@",self.result.business_time_start,self.result.business_time_over],@"营业执照",@"餐饮服务许可证", nil];
         [self.messageArr addObjectsFromArray:array];
-        NSLog(@"count == %ld",self.messageArr.count);
+        [self.detailsView setDetailsResult:shopDetails];
+//        [self.header setResult:shopDetails];
+        [self.commentArr addObjectsFromArray:shopDetails.comment];
+//        NSLog(@"==============%@",self.commentArr);
+        [self.detailsView.table reloadData];
     } failure:^(NSError *error) {
         NSLog(@"%@",error);
     }];
@@ -85,7 +90,14 @@
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(StartX, StartY, ScreenWidth, 30);
         button.titleLabel.font = [UIFont systemFontOfSize:14];
-        [button setTitle:@"查看全部评论" forState:UIControlStateNormal];
+        button.userInteractionEnabled = YES;
+        if (self.commentArr.count > 0) {
+            [button setTitle:[NSString stringWithFormat:@"查看全部%ld条评价",self.commentArr.count] forState:UIControlStateNormal];
+            button.userInteractionEnabled = YES;
+        }else{
+            [button setTitle:@"无更多评价" forState:UIControlStateNormal];
+            button.userInteractionEnabled = NO;
+        }
         [button setTitleColor:[GVColor hexStringToColor:@"#ffba14"] forState:UIControlStateNormal];
         [view addSubview:button];
         return view;
@@ -119,6 +131,9 @@
         return self.detailsView.table.rowHeight;
     }
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -132,7 +147,7 @@
         return 1;
     }
     else{
-        return 3;
+        return self.commentArr.count;
     }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -143,6 +158,14 @@
             firstCell = [[NSBundle mainBundle] loadNibNamed:@"FirstDetailsCell" owner:self options:nil].lastObject;
         }
         firstCell.firstLabel.text = self.messageArr[indexPath.row];
+        if (indexPath.row == 4) {
+            NSAttributedString *noteStr = [self labelColorWithString:self.messageArr[indexPath.row] rangeString:[NSString stringWithFormat:@"%@-%@",self.result.business_time_start,self.result.business_time_over] textColor:[GVColor hexStringToColor:@"#ffba14"]];
+            //设置颜色
+            [firstCell.firstLabel setAttributedText:noteStr];
+        }
+        if (indexPath.row == 5 || indexPath.row == 6) {
+            firstCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        }
         return firstCell;
     }
     else if (indexPath.section ==1){
@@ -159,8 +182,17 @@
         if (thirdCell == nil) {
             thirdCell = [[NSBundle mainBundle] loadNibNamed:@"ThirdDetailsCell" owner:self options:nil].lastObject;
         }
+//        [thirdCell setCommentD:self.result.comment[indexPath.row]];
         return thirdCell;
     }
+}
+// 文本颜色
+- (NSMutableAttributedString *)labelColorWithString:(NSString *)string rangeString:(NSString *)rangeString textColor:(UIColor *)textColor{
+    NSMutableAttributedString *noteStr = [[NSMutableAttributedString alloc] initWithString:string];
+    NSRange range = NSMakeRange([[noteStr string] rangeOfString:rangeString].location, [[noteStr string] rangeOfString:rangeString].length);
+    //需要设置的位置
+    [noteStr addAttribute:NSForegroundColorAttributeName value:textColor range:range];
+    return noteStr;
 }
 
 #pragma mark - 懒加载
@@ -192,5 +224,11 @@
         _messageArr = [[NSMutableArray alloc] init];
     }
     return _messageArr;
+}
+- (NSMutableArray *)commentArr{
+    if (_commentArr == nil) {
+        _commentArr = [[NSMutableArray alloc] init];
+    }
+    return _commentArr;
 }
 @end

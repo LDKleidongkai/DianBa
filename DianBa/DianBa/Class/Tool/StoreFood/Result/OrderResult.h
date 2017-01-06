@@ -30,6 +30,6 @@
 /**
  菜单
  */
-@property (nonatomic , strong) NSArray *menu_info;
+@property (nonatomic, strong) NSArray *menu_info;
 
 @end

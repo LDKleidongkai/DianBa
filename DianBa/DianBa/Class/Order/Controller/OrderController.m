@@ -22,6 +22,7 @@
 #import "OrderData.h"
 #import "OrderResult.h"
 #import "OrderMenu.h"
+#import "ShopCarModel.h"
 // 店铺详情
 #import "ShopDetailsController.h"
 // 菜品详情
@@ -29,16 +30,18 @@
 
 @interface OrderController ()<UITableViewDelegate,UITableViewDataSource>
 /** 门店菜品数组 */
-@property (nonatomic , strong) NSMutableArray *storesArr;
+@property (nonatomic, strong) NSMutableArray *storesArr;
 @property (nonatomic, strong) OrderResult *result;
-@property (nonatomic , strong) OrderTableView *orderView;
-@property (nonatomic , strong) OrderHeaderView *headerView;
+@property (nonatomic, strong) OrderTableView *orderView;
+@property (nonatomic, strong) OrderHeaderView *headerView;
 @property (nonatomic , assign) BOOL isHiddenHot;
-@property (nonatomic , strong) MaskView *maskView;
-@property (nonatomic , strong) UITapGestureRecognizer *tap;
+@property (nonatomic, strong) MaskView *maskView;
+@property (nonatomic, strong) UITapGestureRecognizer *tap;
 /** 菜品属性数组 */
-@property (nonatomic , strong) NSArray *typeArr;
-@property (nonatomic , strong) MenuHeaderView *hotHeaderV;
+@property (nonatomic, strong) NSArray *typeArr;
+@property (nonatomic, strong) MenuHeaderView *hotHeaderV;
+@property (nonatomic, strong) NSMutableArray *dataArr;
+@property (nonatomic, assign) NSInteger totalPrice;
 @end
 
 @implementation OrderController
@@ -60,6 +63,7 @@
     [self.orderView.returnBtn addTarget:self action:@selector(returnBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.orderView.nReturnBtn addTarget:self action:@selector(returnBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.headerView.maskBtn addTarget:self action:@selector(pushToShopDetails:) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 #pragma mark - 按钮方法
@@ -76,6 +80,15 @@
         self.result = storeFoods;
         NSArray *array = storeFoods.menu_info;
         [self.storesArr addObjectsFromArray:array];
+        for (int i = 0; i < self.storesArr.count; i ++) {
+            ShopCarModel *model = [[ShopCarModel alloc] init];
+            OrderMenu *menu = self.storesArr[i];
+            NSInteger price = menu.menu_price.integerValue;
+            model.price = price;
+            model.number = 0;
+            [self.dataArr addObject:model];
+            
+        }
         // 头视图内容
         NSString *store_photo = self.result.store_photo;
         [self.headerView.shopImg sd_setImageWithURL:[NSURL URLWithString:store_photo]];
@@ -86,6 +99,58 @@
     } failure:^(NSError *error) {
         NSLog(@"%@",error);
     }];
+}
+
+#pragma mark - 购物车
+// 计算总价
+- (void)calculateTotalPrice{
+    self.totalPrice = 0;
+    for (int i = 0; i < self.storesArr.count; i ++) {
+        ShopCarModel *model = [[ShopCarModel alloc] init];
+        model = self.dataArr[i];
+        self.totalPrice += model.price * model.number;
+    }
+    self.orderView.priceLabel.text = [NSString stringWithFormat:@"%ld",self.totalPrice];
+}
+// 购物车动画
+- (void)shoppingCarAnimationWithCell:(OrderTableViewCell *)cell tableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath{
+    cell.clickCars = ^(UIImageView *imageView){
+        CGRect rect = [tableView rectForRowAtIndexPath:indexPath];
+        //获取当前cell 相对于self.view 当前的坐标
+        rect.origin.y = rect.origin.y - [tableView contentOffset].y;
+        CGRect imageViewRect = imageView.frame;
+        imageViewRect.origin.y = rect.origin.y+imageViewRect.origin.y;
+        [[PurchaseCarAnimationTool shareTool]startAnimationandView:imageView andRect:imageViewRect andFinisnRect:CGPointMake(62, ScreenHeight-49) andFinishBlock:^(BOOL finisn){
+            
+            UIView *tabbarBtn = self.orderView.carBtn;
+            [PurchaseCarAnimationTool shakeAnimation:tabbarBtn];
+        }];
+    };
+}
+// 判断是否显示购物车颜色
+- (void)isShowShoppingCarColorWithModel:(ShopCarModel *)model{
+    if (model.number > 0) {
+        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",model.number];
+        [self shoppingCarNotHidden];
+    }else{
+        [self shoppingCarHidden];
+    }
+}
+// 显示购物车颜色
+- (void)shoppingCarHidden{
+    self.orderView.badgeLabel.hidden = YES;
+    self.orderView.rMBLabel.textColor = [GVColor hexStringToColor:@"#b3b3b3"];
+    self.orderView.priceLabel.textColor = [GVColor hexStringToColor:@"#b3b3b3"];
+    self.orderView.balanceBtn.backgroundColor = [GVColor hexStringToColor:@"#7f7f7f"];
+    [self.orderView.balanceBtn setTitleColor:[GVColor hexStringToColor:@"#e6e6e6"] forState:UIControlStateNormal];
+}
+// 隐藏购物车颜色
+- (void)shoppingCarNotHidden{
+    self.orderView.badgeLabel.hidden = NO;
+    self.orderView.rMBLabel.textColor = [UIColor whiteColor];
+    self.orderView.priceLabel.textColor = [UIColor whiteColor];
+    self.orderView.balanceBtn.backgroundColor = [UIColor colorWithRed:253/250.0 green:173/250.0 blue:19/250.0 alpha:1.0];
+    [self.orderView.balanceBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
 #pragma mark - UITableViewDataSource
@@ -111,27 +176,22 @@
         }
         [cell setMenu:self.storesArr[indexPath.row]];
         // 购物车效果
-        cell.clickCars = ^(UIImageView *imageView){
-            CGRect rect = [tableView rectForRowAtIndexPath:indexPath];
-            //获取当前cell 相对于self.view 当前的坐标
-            rect.origin.y = rect.origin.y - [tableView contentOffset].y;
-            CGRect imageViewRect = imageView.frame;
-            imageViewRect.origin.y = rect.origin.y+imageViewRect.origin.y;
-            [[PurchaseCarAnimationTool shareTool]startAnimationandView:imageView andRect:imageViewRect andFinisnRect:CGPointMake(62, ScreenHeight-49) andFinishBlock:^(BOOL finisn){
-                
-                UIView *tabbarBtn = self.orderView.carBtn;
-                [PurchaseCarAnimationTool shakeAnimation:tabbarBtn];
-            }];
+        [self shoppingCarAnimationWithCell:cell tableView:tableView indexPath:indexPath];
+        cell.subBlock = ^ () {
+            ShopCarModel *model = [[ShopCarModel alloc] init];
+            model = self.dataArr[indexPath.row];
+            model.number -= 1;
+            [self.dataArr replaceObjectAtIndex:indexPath.row withObject:model];
+            [self calculateTotalPrice];
+            [self isShowShoppingCarColorWithModel:model];
         };
-        
-        cell.number = ^(NSInteger number){
-            self.orderView.priceLabel.text = [NSString stringWithFormat:@"%ld",[cell.priceLabel.text intValue] * number];
-            if ([cell.numLabel.text intValue] > 0) {
-                self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",number];
-                [self shoppingCarWithBadgeLabelIsHidden:NO rmbLabelColor:[UIColor whiteColor] priceLabelColor:[UIColor whiteColor] balanceBtnBackgroundColor:[UIColor colorWithRed:253/250.0 green:173/250.0 blue:19/250.0 alpha:1.0] balanceBtnTitleColor:[UIColor whiteColor]];
-            }else{
-                [self shoppingCarWithBadgeLabelIsHidden:YES rmbLabelColor:[GVColor hexStringToColor:@"#b3b3b3"] priceLabelColor:[GVColor hexStringToColor:@"#b3b3b3"] balanceBtnBackgroundColor:[GVColor hexStringToColor:@"#7f7f7f"] balanceBtnTitleColor:[GVColor hexStringToColor:@"#e6e6e6"]];
-            }
+        cell.addBlock = ^ () {
+            ShopCarModel *model = [[ShopCarModel alloc] init];
+            model = self.dataArr[indexPath.row];
+            model.number += 1;
+            [self.dataArr replaceObjectAtIndex:indexPath.row withObject:model];
+            [self calculateTotalPrice];
+            [self isShowShoppingCarColorWithModel:model];
         };
         return cell;
     }
@@ -166,15 +226,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self.navigationController pushViewController:[[DetailsTableViewController alloc] init] animated:YES];
-}
-
-#pragma mark - 购物车
-- (void)shoppingCarWithBadgeLabelIsHidden:(BOOL)isHidden rmbLabelColor:(UIColor *)rmbColor priceLabelColor:(UIColor *)priceColor balanceBtnBackgroundColor:(UIColor *)balanceBColor balanceBtnTitleColor:(UIColor *)balanceTColor{
-    self.orderView.badgeLabel.hidden = isHidden;
-    self.orderView.rMBLabel.textColor = rmbColor;
-    self.orderView.priceLabel.textColor = priceColor;
-    self.orderView.balanceBtn.backgroundColor = balanceBColor;
-    [self.orderView.balanceBtn setTitleColor:balanceTColor forState:UIControlStateNormal];
 }
 
 #pragma mark - 侧滑按钮方法
@@ -227,10 +278,10 @@
             }];
         }else{
             [UIView animateWithDuration:0.5 animations:^{
-                [self.view addSubview:_orderView.returnBtn];
-                [self.view addSubview:_orderView.collectionBtn];
                 [self hiddenNavigationBar];
             }];
+            [self.view addSubview:_orderView.returnBtn];
+            [self.view addSubview:_orderView.collectionBtn];
         }
     }
     else if (scrollView.tag == 2){
@@ -305,5 +356,11 @@
         _result = [[OrderResult alloc] init];
     }
     return _result;
+}
+- (NSMutableArray *)dataArr{
+    if (_dataArr == nil) {
+        _dataArr = [NSMutableArray array];
+    }
+    return _dataArr;
 }
 @end

@@ -7,6 +7,13 @@
 //
 
 #import "ShopDtailsHeader.h"
+#import "ShopDetailsResult.h"
+
+@interface ShopDtailsHeader ()
+
+@property (nonatomic, strong) NSArray *array;
+
+@end
 
 @implementation ShopDtailsHeader
 
@@ -25,6 +32,18 @@
         _headerScroll = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, ScreenWidth, 220) imageURLStringsGroup:array];
     }
     return _headerScroll;
+}
+
+- (NSArray *)array{
+    if (_array == nil) {
+        _array = [[NSArray alloc] init];
+    }
+    return _array;
+}
+
+- (void)setResult:(ShopDetailsResult *)result{
+    _result = result;
+    self.headerScroll = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, ScreenWidth, 220) imageURLStringsGroup:result.store_img];
 }
 
 @end

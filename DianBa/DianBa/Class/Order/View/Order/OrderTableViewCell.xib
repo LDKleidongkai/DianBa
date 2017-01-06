@@ -137,7 +137,7 @@
                 <outlet property="shopImg" destination="xht-Gp-dbs" id="Cwf-6Y-K5b"/>
                 <outlet property="subtractBtn" destination="ZLt-do-9Z7" id="0bf-s7-D1G"/>
             </connections>
-            <point key="canvasLocation" x="-131" y="-86"/>
+            <point key="canvasLocation" x="-4" y="-153"/>
         </tableViewCell>
     </objects>
     <resources>
