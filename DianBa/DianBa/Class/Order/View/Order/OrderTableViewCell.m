@@ -69,6 +69,7 @@
     self.salesLabel.text = [NSString stringWithFormat:@"月售%@份",menu.count_num];
     self.praiseLabel.text = [NSString stringWithFormat:@"好评率%@%%",menu.rated];
     self.priceLabel.text = menu.menu_price;
+    self.numLabel.text = [NSString stringWithFormat:@"%ld",menu.number];
 }
 
 @end

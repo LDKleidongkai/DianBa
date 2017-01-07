@@ -22,7 +22,6 @@
 #import "OrderData.h"
 #import "OrderResult.h"
 #import "OrderMenu.h"
-#import "ShopCarModel.h"
 // 店铺详情
 #import "ShopDetailsController.h"
 // 菜品详情
@@ -40,7 +39,6 @@
 /** 菜品属性数组 */
 @property (nonatomic, strong) NSArray *typeArr;
 @property (nonatomic, strong) MenuHeaderView *hotHeaderV;
-@property (nonatomic, strong) NSMutableArray *dataArr;
 @property (nonatomic, assign) NSInteger totalPrice;
 @end
 
@@ -81,13 +79,9 @@
         NSArray *array = storeFoods.menu_info;
         [self.storesArr addObjectsFromArray:array];
         for (int i = 0; i < self.storesArr.count; i ++) {
-            ShopCarModel *model = [[ShopCarModel alloc] init];
             OrderMenu *menu = self.storesArr[i];
-            NSInteger price = menu.menu_price.integerValue;
-            model.price = price;
-            model.number = 0;
-            [self.dataArr addObject:model];
-            
+            menu.number = 0;
+            menu.price = menu.menu_price.integerValue;
         }
         // 头视图内容
         NSString *store_photo = self.result.store_photo;
@@ -105,34 +99,47 @@
 // 菜品添加和减少
 - (void)footIncreaseOrInduceWithCell:(OrderTableViewCell *)cell indexPath:(NSIndexPath *)indexPath{
     cell.subBlock = ^ () {
-        ShopCarModel *model = [[ShopCarModel alloc] init];
-        model = self.dataArr[indexPath.row];
-        model.number -= 1;
-        [self.dataArr replaceObjectAtIndex:indexPath.row withObject:model];
+        OrderMenu *menu = self.storesArr[indexPath.row];
+        menu.number -= 1;
+        [self.storesArr replaceObjectAtIndex:indexPath.row withObject:menu];
         [self calculateTotalPrice];
-        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",model.number];
+        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",menu.number];
+//        ShopCarModel *model = [[ShopCarModel alloc] init];
+//        model = self.dataArr[indexPath.row];
+//        model.number -= 1;
+//        [self.dataArr replaceObjectAtIndex:indexPath.row withObject:model];
+//        [self calculateTotalPrice];
+//        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",model.number];
     };
     cell.addBlock = ^ () {
-        ShopCarModel *model = [[ShopCarModel alloc] init];
-        model = self.dataArr[indexPath.row];
-        model.number += 1;
-        [self.dataArr replaceObjectAtIndex:indexPath.row withObject:model];
+        OrderMenu *menu = self.storesArr[indexPath.row];
+        menu.number += 1;
+        [self.storesArr replaceObjectAtIndex:indexPath.row withObject:menu];
         [self calculateTotalPrice];
-        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",model.number];
+        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",menu.number];
+//        ShopCarModel *model = [[ShopCarModel alloc] init];
+//        model = self.dataArr[indexPath.row];
+//        model.number += 1;
+//        [self.dataArr replaceObjectAtIndex:indexPath.row withObject:model];
+//        [self calculateTotalPrice];
+//        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",model.number];
     };
 }
 // 计算总价
 - (void)calculateTotalPrice{
     self.totalPrice = 0;
     for (int i = 0; i < self.storesArr.count; i ++) {
-        ShopCarModel *model = [[ShopCarModel alloc] init];
-        model = self.dataArr[i];
-        self.totalPrice += model.price * model.number;
+        OrderMenu *menu = self.storesArr[i];
+        self.totalPrice += menu.price * menu.number;
         if (self.totalPrice > 0) {
             [self shoppingCarNotHidden];
         }else{
             [self shoppingCarHidden];
         }
+
+//        ShopCarModel *model = [[ShopCarModel alloc] init];
+//        model = self.dataArr[i];
+//        self.totalPrice += model.price * model.number;
     }
     self.orderView.priceLabel.text = [NSString stringWithFormat:@"%ld",self.totalPrice];
 }
@@ -151,15 +158,6 @@
         }];
     };
 }
-//// 判断是否显示购物车颜色
-//- (void)isShowShoppingCarColorWithModel:(ShopCarModel *)model{
-//    if (model.number > 0) {
-//        self.orderView.badgeLabel.text = [NSString stringWithFormat:@"%ld",model.number];
-//        [self shoppingCarNotHidden];
-//    }else{
-//        [self shoppingCarHidden];
-//    }
-//}
 // 显示购物车颜色
 - (void)shoppingCarHidden{
     self.orderView.badgeLabel.hidden = YES;
@@ -177,7 +175,7 @@
     [self.orderView.balanceBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
 
-#pragma mark - UITableViewDataSource
+#pragma mark - tableView DataSource||Delegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (tableView.tag == 1) {
         return self.storesArr.count;
@@ -188,7 +186,6 @@
         return 0;
     }
 }
-
 #pragma mark warning 点击时的文字颜色
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -220,8 +217,6 @@
         return nil;
     }
 }
-
-#pragma mark - UITableViewDelegate
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (tableView.tag == 1) {
         return OrderCellHeight;
@@ -366,11 +361,5 @@
         _result = [[OrderResult alloc] init];
     }
     return _result;
-}
-- (NSMutableArray *)dataArr{
-    if (_dataArr == nil) {
-        _dataArr = [NSMutableArray array];
-    }
-    return _dataArr;
 }
 @end

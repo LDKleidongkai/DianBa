@@ -31,4 +31,9 @@
 /** 原价 */
 @property (nonatomic, copy) NSString *stock;
 
+/** 数量 */
+@property (nonatomic, assign) NSInteger number;
+@property (nonatomic, assign) NSInteger price;
+
+
 @end
