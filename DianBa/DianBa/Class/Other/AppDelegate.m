@@ -10,7 +10,6 @@
 #import "ShopDetailsController.h"
 #import "TabBarViewController.h"
 #import "OrderController.h"
-#import "OrderJudgeViewController.h"
 
 @interface AppDelegate ()
 @end
@@ -24,9 +23,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
 
-//    self.window.rootViewController =[[TabBarViewController alloc] init];
+    self.window.rootViewController =[[TabBarViewController alloc] init];
 
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[TabBarViewController alloc] init]];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ShopDetailsController alloc] init]];
     
     return YES;
 }
