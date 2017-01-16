@@ -7,7 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		002F36F51E1D3296004D3FC3 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F36F41E1D3296004D3FC3 /* libc++abi.tbd */; };
+		00072FF11E20771100E0DF32 /* OrderFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00072FF01E20771100E0DF32 /* OrderFormViewController.m */; };
+		0007302A1E20775700E0DF32 /* LDKAllTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000730161E20775700E0DF32 /* LDKAllTableView.m */; };
+		0007302B1E20775700E0DF32 /* LDKAllTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 000730181E20775700E0DF32 /* LDKAllTableViewCell.m */; };
+		0007302C1E20775700E0DF32 /* LDKAllTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000730191E20775700E0DF32 /* LDKAllTableViewCell.xib */; };
+		0007302D1E20775700E0DF32 /* LDKHallFoodTableview.m in Sources */ = {isa = PBXBuildFile; fileRef = 0007301B1E20775700E0DF32 /* LDKHallFoodTableview.m */; };
+		0007302E1E20775700E0DF32 /* LDKTakeOutTableview.m in Sources */ = {isa = PBXBuildFile; fileRef = 0007301D1E20775700E0DF32 /* LDKTakeOutTableview.m */; };
+		0007302F1E20775700E0DF32 /* MyOrderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0007301F1E20775700E0DF32 /* MyOrderFooterView.m */; };
+		000730301E20775700E0DF32 /* MyOrderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000730201E20775700E0DF32 /* MyOrderFooterView.xib */; };
+		000730311E20775700E0DF32 /* MyOrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000730221E20775700E0DF32 /* MyOrderHeaderView.m */; };
+		000730321E20775700E0DF32 /* MyOrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000730231E20775700E0DF32 /* MyOrderHeaderView.xib */; };
+		000730331E20775700E0DF32 /* SubmitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000730251E20775700E0DF32 /* SubmitView.m */; };
+		000730341E20775700E0DF32 /* SubmitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000730261E20775700E0DF32 /* SubmitView.xib */; };
+		000730351E20775700E0DF32 /* VegetablesJudgecellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 000730281E20775700E0DF32 /* VegetablesJudgecellCell.m */; };
+		000730361E20775700E0DF32 /* VegetablesJudgecellCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000730291E20775700E0DF32 /* VegetablesJudgecellCell.xib */; };
+		0007303B1E20777E00E0DF32 /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000730381E20777E00E0DF32 /* MyOrderViewController.m */; };
+		0007303C1E20777E00E0DF32 /* OrderJudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0007303A1E20777E00E0DF32 /* OrderJudgeViewController.m */; };
+		000730521E2077B200E0DF32 /* OnceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0007303E1E2077B200E0DF32 /* OnceView.m */; };
+		000730531E2077B200E0DF32 /* OnceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0007303F1E2077B200E0DF32 /* OnceView.xib */; };
+		000730541E2077B200E0DF32 /* MyOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 000730411E2077B200E0DF32 /* MyOrderTableViewCell.m */; };
+		000730551E2077B200E0DF32 /* MyOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000730421E2077B200E0DF32 /* MyOrderTableViewCell.xib */; };
+		000730561E2077B200E0DF32 /* OrderAmountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000730441E2077B200E0DF32 /* OrderAmountView.m */; };
+		000730571E2077B200E0DF32 /* OrderAmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000730451E2077B200E0DF32 /* OrderAmountView.xib */; };
+		000730581E2077B200E0DF32 /* OrderDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000730471E2077B200E0DF32 /* OrderDetailsView.m */; };
+		000730591E2077B200E0DF32 /* OrderDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000730481E2077B200E0DF32 /* OrderDetailsView.xib */; };
+		0007305A1E2077B200E0DF32 /* DistributionMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0007304A1E2077B200E0DF32 /* DistributionMessageView.m */; };
+		0007305B1E2077B200E0DF32 /* DistributionMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0007304B1E2077B200E0DF32 /* DistributionMessageView.xib */; };
+		0007305C1E2077B200E0DF32 /* BottomButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0007304D1E2077B200E0DF32 /* BottomButtonView.m */; };
+		0007305D1E2077B200E0DF32 /* BottomButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0007304E1E2077B200E0DF32 /* BottomButtonView.xib */; };
+		0007305E1E2077B200E0DF32 /* VegetablesHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000730501E2077B200E0DF32 /* VegetablesHeaderView.m */; };
+		0007305F1E2077B200E0DF32 /* VegetablesHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000730511E2077B200E0DF32 /* VegetablesHeaderView.xib */; };
+		007D2DAB1E2601900012D488 /* AddAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D2DAA1E2601900012D488 /* AddAddressViewController.m */; };
+		007D2DC41E2647D90012D488 /* SelectResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D2DC31E2647D90012D488 /* SelectResultData.m */; };
+		00C3E8FF1E236C27007F22D0 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F36F41E1D3296004D3FC3 /* libc++abi.tbd */; };
+		00C3E9071E237F34007F22D0 /* IntegralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C3E9061E237F34007F22D0 /* IntegralViewController.m */; };
+		00C3E90A1E237F67007F22D0 /* SiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C3E9091E237F67007F22D0 /* SiteViewController.m */; };
+		00C3E90D1E237F97007F22D0 /* LeagueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C3E90C1E237F97007F22D0 /* LeagueViewController.m */; };
+		00C3E9101E237FAB007F22D0 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C3E90F1E237FAB007F22D0 /* AboutViewController.m */; };
+		00C3E9131E237FBF007F22D0 /* FeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C3E9121E237FBF007F22D0 /* FeedBackViewController.m */; };
+		00C3E9171E238074007F22D0 /* PersonalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C3E9161E238074007F22D0 /* PersonalInformationViewController.m */; };
+		00C3E91A1E239F17007F22D0 /* MyWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C3E9191E239F17007F22D0 /* MyWalletViewController.m */; };
+		00C3E91D1E239F3D007F22D0 /* DiscountCouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C3E91C1E239F3D007F22D0 /* DiscountCouponViewController.m */; };
+		00D2162E1E2714A600FD8E9A /* LDKLogingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2162D1E2714A600FD8E9A /* LDKLogingViewController.m */; };
+		00D216311E2714C100FD8E9A /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D216301E2714C100FD8E9A /* NSString+MD5.m */; };
+		00D216561E27155A00FD8E9A /* AddressAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D216481E27155A00FD8E9A /* AddressAdd.m */; };
+		00D216571E27155A00FD8E9A /* AddressAdd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D216491E27155A00FD8E9A /* AddressAdd.xib */; };
+		00D216581E27155A00FD8E9A /* AddressHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2164B1E27155A00FD8E9A /* AddressHeaderView.m */; };
+		00D216591E27155A00FD8E9A /* AddressHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D2164C1E27155A00FD8E9A /* AddressHeaderView.xib */; };
+		00D2165A1E27155A00FD8E9A /* AddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2164E1E27155A00FD8E9A /* AddressTableViewCell.m */; };
+		00D2165B1E27155A00FD8E9A /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D2164F1E27155A00FD8E9A /* AddressTableViewCell.xib */; };
+		00D2165C1E27155A00FD8E9A /* FeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D216511E27155A00FD8E9A /* FeedbackView.m */; };
+		00D2165D1E27155A00FD8E9A /* FeedbackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D216521E27155A00FD8E9A /* FeedbackView.xib */; };
+		00D2165E1E27155A00FD8E9A /* LDKMineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D216541E27155A00FD8E9A /* LDKMineView.m */; };
+		00D2165F1E27155A00FD8E9A /* LDKMineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D216551E27155A00FD8E9A /* LDKMineView.xib */; };
+		00D216661E27156F00FD8E9A /* LDKAccountPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D216611E27156F00FD8E9A /* LDKAccountPasswordView.m */; };
+		00D216671E27156F00FD8E9A /* LDKAccountPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D216621E27156F00FD8E9A /* LDKAccountPasswordView.xib */; };
+		00D216681E27156F00FD8E9A /* LDKMobileNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D216641E27156F00FD8E9A /* LDKMobileNumberView.m */; };
+		00D216691E27156F00FD8E9A /* LDKMobileNumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D216651E27156F00FD8E9A /* LDKMobileNumberView.xib */; };
+		00D2166C1E271A5700FD8E9A /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2166B1E271A5700FD8E9A /* NetworkRequest.m */; };
 		00E592161E12A75100065BC4 /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00E592151E12A75100065BC4 /* cityGroups.plist */; };
 		CF01136A59D8393F1EC27771 /* Pods_DianBa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009F053588FA4657C3B60710 /* Pods_DianBa.framework */; };
 		EF6ECE841E20724C004A274F /* DetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECD731E20724C004A274F /* DetailsTableViewController.m */; };
@@ -50,27 +107,6 @@
 		EF6ECEA91E20724C004A274F /* OrderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDCD1E20724C004A274F /* OrderTableView.m */; };
 		EF6ECEAA1E20724C004A274F /* OrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDCF1E20724C004A274F /* OrderTableViewCell.m */; };
 		EF6ECEAB1E20724C004A274F /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6ECDD01E20724C004A274F /* OrderTableViewCell.xib */; };
-		EF6ECEAC1E20724C004A274F /* BottomButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDD41E20724C004A274F /* BottomButtonView.m */; };
-		EF6ECEAD1E20724C004A274F /* BottomButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6ECDD51E20724C004A274F /* BottomButtonView.xib */; };
-		EF6ECEAE1E20724C004A274F /* DistributionMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDD71E20724C004A274F /* DistributionMessageView.m */; };
-		EF6ECEAF1E20724C004A274F /* DistributionMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6ECDD81E20724C004A274F /* DistributionMessageView.xib */; };
-		EF6ECEB01E20724C004A274F /* LDKAllTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDDA1E20724C004A274F /* LDKAllTableView.m */; };
-		EF6ECEB11E20724C004A274F /* LDKAllTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDDC1E20724C004A274F /* LDKAllTableViewCell.m */; };
-		EF6ECEB21E20724C004A274F /* LDKAllTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6ECDDD1E20724C004A274F /* LDKAllTableViewCell.xib */; };
-		EF6ECEB31E20724C004A274F /* LDKHallFoodTableview.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDDF1E20724C004A274F /* LDKHallFoodTableview.m */; };
-		EF6ECEB41E20724C004A274F /* LDKTakeOutTableview.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDE11E20724C004A274F /* LDKTakeOutTableview.m */; };
-		EF6ECEB51E20724C004A274F /* MyOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDE31E20724C004A274F /* MyOrderTableViewCell.m */; };
-		EF6ECEB61E20724C004A274F /* MyOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6ECDE41E20724C004A274F /* MyOrderTableViewCell.xib */; };
-		EF6ECEB71E20724C004A274F /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDE61E20724C004A274F /* MyOrderViewController.m */; };
-		EF6ECEB81E20724C004A274F /* OnceView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDE81E20724C004A274F /* OnceView.m */; };
-		EF6ECEB91E20724C004A274F /* OnceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6ECDE91E20724C004A274F /* OnceView.xib */; };
-		EF6ECEBA1E20724C004A274F /* OrderAmountView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDEB1E20724C004A274F /* OrderAmountView.m */; };
-		EF6ECEBB1E20724C004A274F /* OrderAmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6ECDEC1E20724C004A274F /* OrderAmountView.xib */; };
-		EF6ECEBC1E20724C004A274F /* OrderDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDEE1E20724C004A274F /* OrderDetailsView.m */; };
-		EF6ECEBD1E20724C004A274F /* OrderDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6ECDEF1E20724C004A274F /* OrderDetailsView.xib */; };
-		EF6ECEBE1E20724C004A274F /* OrderFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDF11E20724C004A274F /* OrderFormViewController.m */; };
-		EF6ECEBF1E20724C004A274F /* VegetablesHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDF31E20724C004A274F /* VegetablesHeaderView.m */; };
-		EF6ECEC01E20724C004A274F /* VegetablesHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6ECDF41E20724C004A274F /* VegetablesHeaderView.xib */; };
 		EF6ECEC11E20724C004A274F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDF91E20724C004A274F /* AppDelegate.m */; };
 		EF6ECEC21E20724C004A274F /* UIBarButtonItem+BarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDFC1E20724C004A274F /* UIBarButtonItem+BarButtonItem.m */; };
 		EF6ECEC31E20724C004A274F /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6ECDFE1E20724C004A274F /* UIBarButtonItem+Extension.m */; };
@@ -136,8 +172,103 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00072FEF1E20771100E0DF32 /* OrderFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFormViewController.h; sourceTree = "<group>"; };
+		00072FF01E20771100E0DF32 /* OrderFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFormViewController.m; sourceTree = "<group>"; };
+		000730151E20775700E0DF32 /* LDKAllTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKAllTableView.h; sourceTree = "<group>"; };
+		000730161E20775700E0DF32 /* LDKAllTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKAllTableView.m; sourceTree = "<group>"; };
+		000730171E20775700E0DF32 /* LDKAllTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKAllTableViewCell.h; sourceTree = "<group>"; };
+		000730181E20775700E0DF32 /* LDKAllTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKAllTableViewCell.m; sourceTree = "<group>"; };
+		000730191E20775700E0DF32 /* LDKAllTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDKAllTableViewCell.xib; sourceTree = "<group>"; };
+		0007301A1E20775700E0DF32 /* LDKHallFoodTableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKHallFoodTableview.h; sourceTree = "<group>"; };
+		0007301B1E20775700E0DF32 /* LDKHallFoodTableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKHallFoodTableview.m; sourceTree = "<group>"; };
+		0007301C1E20775700E0DF32 /* LDKTakeOutTableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKTakeOutTableview.h; sourceTree = "<group>"; };
+		0007301D1E20775700E0DF32 /* LDKTakeOutTableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKTakeOutTableview.m; sourceTree = "<group>"; };
+		0007301E1E20775700E0DF32 /* MyOrderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderFooterView.h; sourceTree = "<group>"; };
+		0007301F1E20775700E0DF32 /* MyOrderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderFooterView.m; sourceTree = "<group>"; };
+		000730201E20775700E0DF32 /* MyOrderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderFooterView.xib; sourceTree = "<group>"; };
+		000730211E20775700E0DF32 /* MyOrderHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderHeaderView.h; sourceTree = "<group>"; };
+		000730221E20775700E0DF32 /* MyOrderHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderHeaderView.m; sourceTree = "<group>"; };
+		000730231E20775700E0DF32 /* MyOrderHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderHeaderView.xib; sourceTree = "<group>"; };
+		000730241E20775700E0DF32 /* SubmitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitView.h; sourceTree = "<group>"; };
+		000730251E20775700E0DF32 /* SubmitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitView.m; sourceTree = "<group>"; };
+		000730261E20775700E0DF32 /* SubmitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitView.xib; sourceTree = "<group>"; };
+		000730271E20775700E0DF32 /* VegetablesJudgecellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VegetablesJudgecellCell.h; sourceTree = "<group>"; };
+		000730281E20775700E0DF32 /* VegetablesJudgecellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VegetablesJudgecellCell.m; sourceTree = "<group>"; };
+		000730291E20775700E0DF32 /* VegetablesJudgecellCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VegetablesJudgecellCell.xib; sourceTree = "<group>"; };
+		000730371E20777E00E0DF32 /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
+		000730381E20777E00E0DF32 /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
+		000730391E20777E00E0DF32 /* OrderJudgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderJudgeViewController.h; sourceTree = "<group>"; };
+		0007303A1E20777E00E0DF32 /* OrderJudgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderJudgeViewController.m; sourceTree = "<group>"; };
+		0007303D1E2077B200E0DF32 /* OnceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnceView.h; sourceTree = "<group>"; };
+		0007303E1E2077B200E0DF32 /* OnceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnceView.m; sourceTree = "<group>"; };
+		0007303F1E2077B200E0DF32 /* OnceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnceView.xib; sourceTree = "<group>"; };
+		000730401E2077B200E0DF32 /* MyOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderTableViewCell.h; sourceTree = "<group>"; };
+		000730411E2077B200E0DF32 /* MyOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderTableViewCell.m; sourceTree = "<group>"; };
+		000730421E2077B200E0DF32 /* MyOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderTableViewCell.xib; sourceTree = "<group>"; };
+		000730431E2077B200E0DF32 /* OrderAmountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderAmountView.h; sourceTree = "<group>"; };
+		000730441E2077B200E0DF32 /* OrderAmountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderAmountView.m; sourceTree = "<group>"; };
+		000730451E2077B200E0DF32 /* OrderAmountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderAmountView.xib; sourceTree = "<group>"; };
+		000730461E2077B200E0DF32 /* OrderDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailsView.h; sourceTree = "<group>"; };
+		000730471E2077B200E0DF32 /* OrderDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailsView.m; sourceTree = "<group>"; };
+		000730481E2077B200E0DF32 /* OrderDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailsView.xib; sourceTree = "<group>"; };
+		000730491E2077B200E0DF32 /* DistributionMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributionMessageView.h; sourceTree = "<group>"; };
+		0007304A1E2077B200E0DF32 /* DistributionMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributionMessageView.m; sourceTree = "<group>"; };
+		0007304B1E2077B200E0DF32 /* DistributionMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistributionMessageView.xib; sourceTree = "<group>"; };
+		0007304C1E2077B200E0DF32 /* BottomButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomButtonView.h; sourceTree = "<group>"; };
+		0007304D1E2077B200E0DF32 /* BottomButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomButtonView.m; sourceTree = "<group>"; };
+		0007304E1E2077B200E0DF32 /* BottomButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomButtonView.xib; sourceTree = "<group>"; };
+		0007304F1E2077B200E0DF32 /* VegetablesHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VegetablesHeaderView.h; sourceTree = "<group>"; };
+		000730501E2077B200E0DF32 /* VegetablesHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VegetablesHeaderView.m; sourceTree = "<group>"; };
+		000730511E2077B200E0DF32 /* VegetablesHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VegetablesHeaderView.xib; sourceTree = "<group>"; };
 		002F36F41E1D3296004D3FC3 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		007D2DA91E2601900012D488 /* AddAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAddressViewController.h; sourceTree = "<group>"; };
+		007D2DAA1E2601900012D488 /* AddAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAddressViewController.m; sourceTree = "<group>"; };
+		007D2DC21E2647D90012D488 /* SelectResultData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectResultData.h; path = DianBa/Class/Mine/Controller/SelectResultData.h; sourceTree = SOURCE_ROOT; };
+		007D2DC31E2647D90012D488 /* SelectResultData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectResultData.m; path = DianBa/Class/Mine/Controller/SelectResultData.m; sourceTree = SOURCE_ROOT; };
 		009F053588FA4657C3B60710 /* Pods_DianBa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DianBa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C3E9051E237F34007F22D0 /* IntegralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegralViewController.h; sourceTree = "<group>"; };
+		00C3E9061E237F34007F22D0 /* IntegralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegralViewController.m; sourceTree = "<group>"; };
+		00C3E9081E237F67007F22D0 /* SiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteViewController.h; sourceTree = "<group>"; };
+		00C3E9091E237F67007F22D0 /* SiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteViewController.m; sourceTree = "<group>"; };
+		00C3E90B1E237F97007F22D0 /* LeagueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeagueViewController.h; sourceTree = "<group>"; };
+		00C3E90C1E237F97007F22D0 /* LeagueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeagueViewController.m; sourceTree = "<group>"; };
+		00C3E90E1E237FAB007F22D0 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		00C3E90F1E237FAB007F22D0 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		00C3E9111E237FBF007F22D0 /* FeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackViewController.h; sourceTree = "<group>"; };
+		00C3E9121E237FBF007F22D0 /* FeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackViewController.m; sourceTree = "<group>"; };
+		00C3E9151E238074007F22D0 /* PersonalInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInformationViewController.h; sourceTree = "<group>"; };
+		00C3E9161E238074007F22D0 /* PersonalInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInformationViewController.m; sourceTree = "<group>"; };
+		00C3E9181E239F17007F22D0 /* MyWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWalletViewController.h; sourceTree = "<group>"; };
+		00C3E9191E239F17007F22D0 /* MyWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWalletViewController.m; sourceTree = "<group>"; };
+		00C3E91B1E239F3D007F22D0 /* DiscountCouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscountCouponViewController.h; sourceTree = "<group>"; };
+		00C3E91C1E239F3D007F22D0 /* DiscountCouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscountCouponViewController.m; sourceTree = "<group>"; };
+		00D2162C1E2714A600FD8E9A /* LDKLogingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKLogingViewController.h; sourceTree = "<group>"; };
+		00D2162D1E2714A600FD8E9A /* LDKLogingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKLogingViewController.m; sourceTree = "<group>"; };
+		00D2162F1E2714C100FD8E9A /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		00D216301E2714C100FD8E9A /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		00D216471E27155A00FD8E9A /* AddressAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressAdd.h; sourceTree = "<group>"; };
+		00D216481E27155A00FD8E9A /* AddressAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressAdd.m; sourceTree = "<group>"; };
+		00D216491E27155A00FD8E9A /* AddressAdd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressAdd.xib; sourceTree = "<group>"; };
+		00D2164A1E27155A00FD8E9A /* AddressHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressHeaderView.h; sourceTree = "<group>"; };
+		00D2164B1E27155A00FD8E9A /* AddressHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressHeaderView.m; sourceTree = "<group>"; };
+		00D2164C1E27155A00FD8E9A /* AddressHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressHeaderView.xib; sourceTree = "<group>"; };
+		00D2164D1E27155A00FD8E9A /* AddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressTableViewCell.h; sourceTree = "<group>"; };
+		00D2164E1E27155A00FD8E9A /* AddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressTableViewCell.m; sourceTree = "<group>"; };
+		00D2164F1E27155A00FD8E9A /* AddressTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
+		00D216501E27155A00FD8E9A /* FeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackView.h; sourceTree = "<group>"; };
+		00D216511E27155A00FD8E9A /* FeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackView.m; sourceTree = "<group>"; };
+		00D216521E27155A00FD8E9A /* FeedbackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackView.xib; sourceTree = "<group>"; };
+		00D216531E27155A00FD8E9A /* LDKMineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKMineView.h; sourceTree = "<group>"; };
+		00D216541E27155A00FD8E9A /* LDKMineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKMineView.m; sourceTree = "<group>"; };
+		00D216551E27155A00FD8E9A /* LDKMineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDKMineView.xib; sourceTree = "<group>"; };
+		00D216601E27156F00FD8E9A /* LDKAccountPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKAccountPasswordView.h; sourceTree = "<group>"; };
+		00D216611E27156F00FD8E9A /* LDKAccountPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKAccountPasswordView.m; sourceTree = "<group>"; };
+		00D216621E27156F00FD8E9A /* LDKAccountPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDKAccountPasswordView.xib; sourceTree = "<group>"; };
+		00D216631E27156F00FD8E9A /* LDKMobileNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKMobileNumberView.h; sourceTree = "<group>"; };
+		00D216641E27156F00FD8E9A /* LDKMobileNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKMobileNumberView.m; sourceTree = "<group>"; };
+		00D216651E27156F00FD8E9A /* LDKMobileNumberView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDKMobileNumberView.xib; sourceTree = "<group>"; };
+		00D2166A1E271A5700FD8E9A /* NetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkRequest.h; sourceTree = "<group>"; };
+		00D2166B1E271A5700FD8E9A /* NetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
 		00E592151E12A75100065BC4 /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
 		7AB61EC6EF0A9EF970082E7F /* Pods-DianBa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianBa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DianBa/Pods-DianBa.debug.xcconfig"; sourceTree = "<group>"; };
 		EF6ECD721E20724C004A274F /* DetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsTableViewController.h; sourceTree = "<group>"; };
@@ -211,40 +342,6 @@
 		EF6ECDCE1E20724C004A274F /* OrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTableViewCell.h; sourceTree = "<group>"; };
 		EF6ECDCF1E20724C004A274F /* OrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewCell.m; sourceTree = "<group>"; };
 		EF6ECDD01E20724C004A274F /* OrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
-		EF6ECDD31E20724C004A274F /* BottomButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomButtonView.h; sourceTree = "<group>"; };
-		EF6ECDD41E20724C004A274F /* BottomButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomButtonView.m; sourceTree = "<group>"; };
-		EF6ECDD51E20724C004A274F /* BottomButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BottomButtonView.xib; sourceTree = "<group>"; };
-		EF6ECDD61E20724C004A274F /* DistributionMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributionMessageView.h; sourceTree = "<group>"; };
-		EF6ECDD71E20724C004A274F /* DistributionMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributionMessageView.m; sourceTree = "<group>"; };
-		EF6ECDD81E20724C004A274F /* DistributionMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistributionMessageView.xib; sourceTree = "<group>"; };
-		EF6ECDD91E20724C004A274F /* LDKAllTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKAllTableView.h; sourceTree = "<group>"; };
-		EF6ECDDA1E20724C004A274F /* LDKAllTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKAllTableView.m; sourceTree = "<group>"; };
-		EF6ECDDB1E20724C004A274F /* LDKAllTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKAllTableViewCell.h; sourceTree = "<group>"; };
-		EF6ECDDC1E20724C004A274F /* LDKAllTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKAllTableViewCell.m; sourceTree = "<group>"; };
-		EF6ECDDD1E20724C004A274F /* LDKAllTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDKAllTableViewCell.xib; sourceTree = "<group>"; };
-		EF6ECDDE1E20724C004A274F /* LDKHallFoodTableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKHallFoodTableview.h; sourceTree = "<group>"; };
-		EF6ECDDF1E20724C004A274F /* LDKHallFoodTableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKHallFoodTableview.m; sourceTree = "<group>"; };
-		EF6ECDE01E20724C004A274F /* LDKTakeOutTableview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDKTakeOutTableview.h; sourceTree = "<group>"; };
-		EF6ECDE11E20724C004A274F /* LDKTakeOutTableview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDKTakeOutTableview.m; sourceTree = "<group>"; };
-		EF6ECDE21E20724C004A274F /* MyOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderTableViewCell.h; sourceTree = "<group>"; };
-		EF6ECDE31E20724C004A274F /* MyOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderTableViewCell.m; sourceTree = "<group>"; };
-		EF6ECDE41E20724C004A274F /* MyOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOrderTableViewCell.xib; sourceTree = "<group>"; };
-		EF6ECDE51E20724C004A274F /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
-		EF6ECDE61E20724C004A274F /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
-		EF6ECDE71E20724C004A274F /* OnceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnceView.h; sourceTree = "<group>"; };
-		EF6ECDE81E20724C004A274F /* OnceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnceView.m; sourceTree = "<group>"; };
-		EF6ECDE91E20724C004A274F /* OnceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnceView.xib; sourceTree = "<group>"; };
-		EF6ECDEA1E20724C004A274F /* OrderAmountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderAmountView.h; sourceTree = "<group>"; };
-		EF6ECDEB1E20724C004A274F /* OrderAmountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderAmountView.m; sourceTree = "<group>"; };
-		EF6ECDEC1E20724C004A274F /* OrderAmountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderAmountView.xib; sourceTree = "<group>"; };
-		EF6ECDED1E20724C004A274F /* OrderDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailsView.h; sourceTree = "<group>"; };
-		EF6ECDEE1E20724C004A274F /* OrderDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailsView.m; sourceTree = "<group>"; };
-		EF6ECDEF1E20724C004A274F /* OrderDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderDetailsView.xib; sourceTree = "<group>"; };
-		EF6ECDF01E20724C004A274F /* OrderFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderFormViewController.h; sourceTree = "<group>"; };
-		EF6ECDF11E20724C004A274F /* OrderFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderFormViewController.m; sourceTree = "<group>"; };
-		EF6ECDF21E20724C004A274F /* VegetablesHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VegetablesHeaderView.h; sourceTree = "<group>"; };
-		EF6ECDF31E20724C004A274F /* VegetablesHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VegetablesHeaderView.m; sourceTree = "<group>"; };
-		EF6ECDF41E20724C004A274F /* VegetablesHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VegetablesHeaderView.xib; sourceTree = "<group>"; };
 		EF6ECDF81E20724C004A274F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF6ECDF91E20724C004A274F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EF6ECDFB1E20724C004A274F /* UIBarButtonItem+BarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BarButtonItem.h"; sourceTree = "<group>"; };
@@ -367,7 +464,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				002F36F51E1D3296004D3FC3 /* libc++abi.tbd in Frameworks */,
+				00C3E8FF1E236C27007F22D0 /* libc++abi.tbd in Frameworks */,
 				CF01136A59D8393F1EC27771 /* Pods_DianBa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +472,121 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00072FEE1E20770800E0DF32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				000730371E20777E00E0DF32 /* MyOrderViewController.h */,
+				000730381E20777E00E0DF32 /* MyOrderViewController.m */,
+				000730391E20777E00E0DF32 /* OrderJudgeViewController.h */,
+				0007303A1E20777E00E0DF32 /* OrderJudgeViewController.m */,
+				00072FEF1E20771100E0DF32 /* OrderFormViewController.h */,
+				00072FF01E20771100E0DF32 /* OrderFormViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		000730141E20774D00E0DF32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0007303D1E2077B200E0DF32 /* OnceView.h */,
+				0007303E1E2077B200E0DF32 /* OnceView.m */,
+				0007303F1E2077B200E0DF32 /* OnceView.xib */,
+				000730401E2077B200E0DF32 /* MyOrderTableViewCell.h */,
+				000730411E2077B200E0DF32 /* MyOrderTableViewCell.m */,
+				000730421E2077B200E0DF32 /* MyOrderTableViewCell.xib */,
+				000730431E2077B200E0DF32 /* OrderAmountView.h */,
+				000730441E2077B200E0DF32 /* OrderAmountView.m */,
+				000730451E2077B200E0DF32 /* OrderAmountView.xib */,
+				000730461E2077B200E0DF32 /* OrderDetailsView.h */,
+				000730471E2077B200E0DF32 /* OrderDetailsView.m */,
+				000730481E2077B200E0DF32 /* OrderDetailsView.xib */,
+				000730491E2077B200E0DF32 /* DistributionMessageView.h */,
+				0007304A1E2077B200E0DF32 /* DistributionMessageView.m */,
+				0007304B1E2077B200E0DF32 /* DistributionMessageView.xib */,
+				0007304C1E2077B200E0DF32 /* BottomButtonView.h */,
+				0007304D1E2077B200E0DF32 /* BottomButtonView.m */,
+				0007304E1E2077B200E0DF32 /* BottomButtonView.xib */,
+				0007304F1E2077B200E0DF32 /* VegetablesHeaderView.h */,
+				000730501E2077B200E0DF32 /* VegetablesHeaderView.m */,
+				000730511E2077B200E0DF32 /* VegetablesHeaderView.xib */,
+				000730151E20775700E0DF32 /* LDKAllTableView.h */,
+				000730161E20775700E0DF32 /* LDKAllTableView.m */,
+				000730171E20775700E0DF32 /* LDKAllTableViewCell.h */,
+				000730181E20775700E0DF32 /* LDKAllTableViewCell.m */,
+				000730191E20775700E0DF32 /* LDKAllTableViewCell.xib */,
+				0007301A1E20775700E0DF32 /* LDKHallFoodTableview.h */,
+				0007301B1E20775700E0DF32 /* LDKHallFoodTableview.m */,
+				0007301C1E20775700E0DF32 /* LDKTakeOutTableview.h */,
+				0007301D1E20775700E0DF32 /* LDKTakeOutTableview.m */,
+				0007301E1E20775700E0DF32 /* MyOrderFooterView.h */,
+				0007301F1E20775700E0DF32 /* MyOrderFooterView.m */,
+				000730201E20775700E0DF32 /* MyOrderFooterView.xib */,
+				000730211E20775700E0DF32 /* MyOrderHeaderView.h */,
+				000730221E20775700E0DF32 /* MyOrderHeaderView.m */,
+				000730231E20775700E0DF32 /* MyOrderHeaderView.xib */,
+				000730241E20775700E0DF32 /* SubmitView.h */,
+				000730251E20775700E0DF32 /* SubmitView.m */,
+				000730261E20775700E0DF32 /* SubmitView.xib */,
+				000730271E20775700E0DF32 /* VegetablesJudgecellCell.h */,
+				000730281E20775700E0DF32 /* VegetablesJudgecellCell.m */,
+				000730291E20775700E0DF32 /* VegetablesJudgecellCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		00C3E9141E238040007F22D0 /* Second level */ = {
+			isa = PBXGroup;
+			children = (
+				00C3E9051E237F34007F22D0 /* IntegralViewController.h */,
+				00C3E9061E237F34007F22D0 /* IntegralViewController.m */,
+				00C3E9081E237F67007F22D0 /* SiteViewController.h */,
+				00C3E9091E237F67007F22D0 /* SiteViewController.m */,
+				00C3E90B1E237F97007F22D0 /* LeagueViewController.h */,
+				00C3E90C1E237F97007F22D0 /* LeagueViewController.m */,
+				00C3E90E1E237FAB007F22D0 /* AboutViewController.h */,
+				00C3E90F1E237FAB007F22D0 /* AboutViewController.m */,
+				00C3E9111E237FBF007F22D0 /* FeedBackViewController.h */,
+				00C3E9121E237FBF007F22D0 /* FeedBackViewController.m */,
+				00C3E9151E238074007F22D0 /* PersonalInformationViewController.h */,
+				00C3E9161E238074007F22D0 /* PersonalInformationViewController.m */,
+				00C3E9181E239F17007F22D0 /* MyWalletViewController.h */,
+				00C3E9191E239F17007F22D0 /* MyWalletViewController.m */,
+				00C3E91B1E239F3D007F22D0 /* DiscountCouponViewController.h */,
+				00C3E91C1E239F3D007F22D0 /* DiscountCouponViewController.m */,
+				007D2DA91E2601900012D488 /* AddAddressViewController.h */,
+				007D2DAA1E2601900012D488 /* AddAddressViewController.m */,
+			);
+			name = "Second level";
+			sourceTree = "<group>";
+		};
+		00D216461E27153D00FD8E9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00D216601E27156F00FD8E9A /* LDKAccountPasswordView.h */,
+				00D216611E27156F00FD8E9A /* LDKAccountPasswordView.m */,
+				00D216621E27156F00FD8E9A /* LDKAccountPasswordView.xib */,
+				00D216631E27156F00FD8E9A /* LDKMobileNumberView.h */,
+				00D216641E27156F00FD8E9A /* LDKMobileNumberView.m */,
+				00D216651E27156F00FD8E9A /* LDKMobileNumberView.xib */,
+				00D216471E27155A00FD8E9A /* AddressAdd.h */,
+				00D216481E27155A00FD8E9A /* AddressAdd.m */,
+				00D216491E27155A00FD8E9A /* AddressAdd.xib */,
+				00D2164A1E27155A00FD8E9A /* AddressHeaderView.h */,
+				00D2164B1E27155A00FD8E9A /* AddressHeaderView.m */,
+				00D2164C1E27155A00FD8E9A /* AddressHeaderView.xib */,
+				00D2164D1E27155A00FD8E9A /* AddressTableViewCell.h */,
+				00D2164E1E27155A00FD8E9A /* AddressTableViewCell.m */,
+				00D2164F1E27155A00FD8E9A /* AddressTableViewCell.xib */,
+				00D216501E27155A00FD8E9A /* FeedbackView.h */,
+				00D216511E27155A00FD8E9A /* FeedbackView.m */,
+				00D216521E27155A00FD8E9A /* FeedbackView.xib */,
+				00D216531E27155A00FD8E9A /* LDKMineView.h */,
+				00D216541E27155A00FD8E9A /* LDKMineView.m */,
+				00D216551E27155A00FD8E9A /* LDKMineView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		9CC19962003B302C011C8299 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,9 +768,9 @@
 		EF6ECDB01E20724C004A274F /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				00D216461E27153D00FD8E9A /* View */,
 				EF6ECDB11E20724C004A274F /* Controller */,
 				EF6ECDB41E20724C004A274F /* Model */,
-				EF6ECDB51E20724C004A274F /* View */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -568,6 +780,9 @@
 			children = (
 				EF6ECDB21E20724C004A274F /* MineViewController.h */,
 				EF6ECDB31E20724C004A274F /* MineViewController.m */,
+				00D2162C1E2714A600FD8E9A /* LDKLogingViewController.h */,
+				00D2162D1E2714A600FD8E9A /* LDKLogingViewController.m */,
+				00C3E9141E238040007F22D0 /* Second level */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -575,15 +790,10 @@
 		EF6ECDB41E20724C004A274F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				007D2DC21E2647D90012D488 /* SelectResultData.h */,
+				007D2DC31E2647D90012D488 /* SelectResultData.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		EF6ECDB51E20724C004A274F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		EF6ECDB61E20724C004A274F /* Order */ = {
@@ -664,52 +874,11 @@
 		EF6ECDD11E20724C004A274F /* OrderFrom */ = {
 			isa = PBXGroup;
 			children = (
-				EF6ECDD21E20724C004A274F /* Controller */,
+				000730141E20774D00E0DF32 /* View */,
+				00072FEE1E20770800E0DF32 /* Controller */,
 				EF6ECDF51E20724C004A274F /* Model */,
-				EF6ECDF61E20724C004A274F /* View */,
 			);
 			path = OrderFrom;
-			sourceTree = "<group>";
-		};
-		EF6ECDD21E20724C004A274F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				EF6ECDD31E20724C004A274F /* BottomButtonView.h */,
-				EF6ECDD41E20724C004A274F /* BottomButtonView.m */,
-				EF6ECDD51E20724C004A274F /* BottomButtonView.xib */,
-				EF6ECDD61E20724C004A274F /* DistributionMessageView.h */,
-				EF6ECDD71E20724C004A274F /* DistributionMessageView.m */,
-				EF6ECDD81E20724C004A274F /* DistributionMessageView.xib */,
-				EF6ECDD91E20724C004A274F /* LDKAllTableView.h */,
-				EF6ECDDA1E20724C004A274F /* LDKAllTableView.m */,
-				EF6ECDDB1E20724C004A274F /* LDKAllTableViewCell.h */,
-				EF6ECDDC1E20724C004A274F /* LDKAllTableViewCell.m */,
-				EF6ECDDD1E20724C004A274F /* LDKAllTableViewCell.xib */,
-				EF6ECDDE1E20724C004A274F /* LDKHallFoodTableview.h */,
-				EF6ECDDF1E20724C004A274F /* LDKHallFoodTableview.m */,
-				EF6ECDE01E20724C004A274F /* LDKTakeOutTableview.h */,
-				EF6ECDE11E20724C004A274F /* LDKTakeOutTableview.m */,
-				EF6ECDE21E20724C004A274F /* MyOrderTableViewCell.h */,
-				EF6ECDE31E20724C004A274F /* MyOrderTableViewCell.m */,
-				EF6ECDE41E20724C004A274F /* MyOrderTableViewCell.xib */,
-				EF6ECDE51E20724C004A274F /* MyOrderViewController.h */,
-				EF6ECDE61E20724C004A274F /* MyOrderViewController.m */,
-				EF6ECDE71E20724C004A274F /* OnceView.h */,
-				EF6ECDE81E20724C004A274F /* OnceView.m */,
-				EF6ECDE91E20724C004A274F /* OnceView.xib */,
-				EF6ECDEA1E20724C004A274F /* OrderAmountView.h */,
-				EF6ECDEB1E20724C004A274F /* OrderAmountView.m */,
-				EF6ECDEC1E20724C004A274F /* OrderAmountView.xib */,
-				EF6ECDED1E20724C004A274F /* OrderDetailsView.h */,
-				EF6ECDEE1E20724C004A274F /* OrderDetailsView.m */,
-				EF6ECDEF1E20724C004A274F /* OrderDetailsView.xib */,
-				EF6ECDF01E20724C004A274F /* OrderFormViewController.h */,
-				EF6ECDF11E20724C004A274F /* OrderFormViewController.m */,
-				EF6ECDF21E20724C004A274F /* VegetablesHeaderView.h */,
-				EF6ECDF31E20724C004A274F /* VegetablesHeaderView.m */,
-				EF6ECDF41E20724C004A274F /* VegetablesHeaderView.xib */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		EF6ECDF51E20724C004A274F /* Model */ = {
@@ -717,13 +886,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		EF6ECDF61E20724C004A274F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		EF6ECDF71E20724C004A274F /* Other */ = {
@@ -744,6 +906,8 @@
 		EF6ECDFA1E20724C004A274F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				00D2162F1E2714C100FD8E9A /* NSString+MD5.h */,
+				00D216301E2714C100FD8E9A /* NSString+MD5.m */,
 				EF6ECDFB1E20724C004A274F /* UIBarButtonItem+BarButtonItem.h */,
 				EF6ECDFC1E20724C004A274F /* UIBarButtonItem+BarButtonItem.m */,
 				EF6ECDFD1E20724C004A274F /* UIBarButtonItem+Extension.h */,
@@ -759,6 +923,8 @@
 		EF6ECE031E20724C004A274F /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				00D2166A1E271A5700FD8E9A /* NetworkRequest.h */,
+				00D2166B1E271A5700FD8E9A /* NetworkRequest.m */,
 				EF6ECE041E20724C004A274F /* Animation */,
 				EF6ECE071E20724C004A274F /* GVColor */,
 				EF6ECE0A1E20724C004A274F /* LXSegment */,
@@ -1196,35 +1362,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF6ECEE81E20724C004A274F /* SecondDetailsCell.xib in Resources */,
+				00D216671E27156F00FD8E9A /* LDKAccountPasswordView.xib in Resources */,
 				EF6ECEA81E20724C004A274F /* OrderHeaderView.xib in Resources */,
-				EF6ECEAF1E20724C004A274F /* DistributionMessageView.xib in Resources */,
+				000730361E20775700E0DF32 /* VegetablesJudgecellCell.xib in Resources */,
 				EF6ECEF71E20724C004A274F /* star_gray.png in Resources */,
-				EF6ECEBB1E20724C004A274F /* OrderAmountView.xib in Resources */,
-				EF6ECEAD1E20724C004A274F /* BottomButtonView.xib in Resources */,
 				EF6ECE861E20724C004A274F /* FoodEvaluateTableViewCell.xib in Resources */,
-				EF6ECEB61E20724C004A274F /* MyOrderTableViewCell.xib in Resources */,
-				EF6ECEB91E20724C004A274F /* OnceView.xib in Resources */,
+				00D2165D1E27155A00FD8E9A /* FeedbackView.xib in Resources */,
 				EF6ECEED1E20724C004A274F /* ThirdDetailsCell.xib in Resources */,
 				EFDD07A01E1146C00083C80A /* LaunchScreen.storyboard in Resources */,
 				EF6ECEA41E20724C004A274F /* MenuCell.xib in Resources */,
 				EF6ECE921E20724C004A274F /* HotSearchCollectionViewCell.xib in Resources */,
-				EF6ECEC01E20724C004A274F /* VegetablesHeaderView.xib in Resources */,
 				EF6ECEA61E20724C004A274F /* MenuHeaderView.xib in Resources */,
+				00D2165B1E27155A00FD8E9A /* AddressTableViewCell.xib in Resources */,
+				00D216691E27156F00FD8E9A /* LDKMobileNumberView.xib in Resources */,
 				EF6ECEF91E20724C004A274F /* star_yellow.png in Resources */,
+				000730301E20775700E0DF32 /* MyOrderFooterView.xib in Resources */,
+				0007305B1E2077B200E0DF32 /* DistributionMessageView.xib in Resources */,
 				EF6ECEEA1E20724C004A274F /* ShopDetailsView.xib in Resources */,
+				00D2165F1E27155A00FD8E9A /* LDKMineView.xib in Resources */,
+				000730571E2077B200E0DF32 /* OrderAmountView.xib in Resources */,
+				0007305F1E2077B200E0DF32 /* VegetablesHeaderView.xib in Resources */,
+				000730551E2077B200E0DF32 /* MyOrderTableViewCell.xib in Resources */,
+				000730531E2077B200E0DF32 /* OnceView.xib in Resources */,
+				000730321E20775700E0DF32 /* MyOrderHeaderView.xib in Resources */,
 				EF6ECEDC1E20724C004A274F /* unicode_to_hanyu_pinyin.txt in Resources */,
 				EF6ECEFA1E20724C004A274F /* star_yellow@2x.png in Resources */,
 				EF6ECEF81E20724C004A274F /* star_gray@2x.png in Resources */,
+				0007302C1E20775700E0DF32 /* LDKAllTableViewCell.xib in Resources */,
 				00E592161E12A75100065BC4 /* cityGroups.plist in Resources */,
 				EF6ECE9C1E20724C004A274F /* NavgationView.xib in Resources */,
 				EFDD079D1E1146C00083C80A /* Assets.xcassets in Resources */,
+				000730591E2077B200E0DF32 /* OrderDetailsView.xib in Resources */,
 				EF6ECEE61E20724C004A274F /* FirstDetailsCell.xib in Resources */,
-				EF6ECEBD1E20724C004A274F /* OrderDetailsView.xib in Resources */,
+				0007305D1E2077B200E0DF32 /* BottomButtonView.xib in Resources */,
 				EF6ECE951E20724C004A274F /* SearchHistoryRecordfooter.xib in Resources */,
+				00D216571E27155A00FD8E9A /* AddressAdd.xib in Resources */,
 				EFDD079B1E1146C00083C80A /* Main.storyboard in Resources */,
+				00D216591E27155A00FD8E9A /* AddressHeaderView.xib in Resources */,
 				EF6ECE9E1E20724C004A274F /* popUpView.xib in Resources */,
+				000730341E20775700E0DF32 /* SubmitView.xib in Resources */,
 				EF6ECEAB1E20724C004A274F /* OrderTableViewCell.xib in Resources */,
-				EF6ECEB21E20724C004A274F /* LDKAllTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1283,33 +1460,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6ECEB11E20724C004A274F /* LDKAllTableViewCell.m in Sources */,
 				EF6ECEA21E20724C004A274F /* MaskView.m in Sources */,
 				EF6ECE991E20724C004A274F /* HomeTableViewCell.m in Sources */,
 				EF6ECEE21E20724C004A274F /* PopoverViewCell.m in Sources */,
 				EF6ECEF41E20724C004A274F /* OrderData.m in Sources */,
 				EF6ECE8E1E20724C004A274F /* HomeRequest.m in Sources */,
 				EF6ECED11E20724C004A274F /* SDCycleScrollView.m in Sources */,
+				00D216561E27155A00FD8E9A /* AddressAdd.m in Sources */,
 				EF6ECED71E20724C004A274F /* HanyuPinyinOutputFormat.m in Sources */,
 				EF6ECE881E20724C004A274F /* HomePageViewController.m in Sources */,
 				EF6ECEC21E20724C004A274F /* UIBarButtonItem+BarButtonItem.m in Sources */,
 				EF6ECEDB1E20724C004A274F /* PinyinHelper.m in Sources */,
 				EF6ECECA1E20724C004A274F /* LiuXSegmentView.m in Sources */,
+				00D2165C1E27155A00FD8E9A /* FeedbackView.m in Sources */,
 				EF6ECEE11E20724C004A274F /* PopoverView.m in Sources */,
+				00C3E90A1E237F67007F22D0 /* SiteViewController.m in Sources */,
 				EF6ECE9D1E20724C004A274F /* popUpView.m in Sources */,
 				EF6ECE8D1E20724C004A274F /* CityCollectionHeadView.m in Sources */,
 				EF6ECEA91E20724C004A274F /* OrderTableView.m in Sources */,
+				007D2DC41E2647D90012D488 /* SelectResultData.m in Sources */,
+				00D2162E1E2714A600FD8E9A /* LDKLogingViewController.m in Sources */,
 				EF6ECEC41E20724C004A274F /* UIImage+Image.m in Sources */,
 				EF6ECEF21E20724C004A274F /* ShopDetailsResult.m in Sources */,
-				EF6ECEBE1E20724C004A274F /* OrderFormViewController.m in Sources */,
-				EF6ECEBA1E20724C004A274F /* OrderAmountView.m in Sources */,
+				0007305C1E2077B200E0DF32 /* BottomButtonView.m in Sources */,
+				0007302E1E20775700E0DF32 /* LDKTakeOutTableview.m in Sources */,
+				00C3E9131E237FBF007F22D0 /* FeedBackViewController.m in Sources */,
+				00C3E91A1E239F17007F22D0 /* MyWalletViewController.m in Sources */,
 				EF6ECEDF1E20724C004A274F /* TabBarViewController.m in Sources */,
-				EF6ECEB31E20724C004A274F /* LDKHallFoodTableview.m in Sources */,
 				EF6ECE851E20724C004A274F /* FoodEvaluateTableViewCell.m in Sources */,
+				00C3E91D1E239F3D007F22D0 /* DiscountCouponViewController.m in Sources */,
 				EF6ECE911E20724C004A274F /* HotSearchCollectionViewCell.m in Sources */,
 				EF6ECEA11E20724C004A274F /* OrderMenu.m in Sources */,
 				EF6ECECC1E20724C004A274F /* TAAbstractDotView.m in Sources */,
-				EF6ECEB41E20724C004A274F /* LDKTakeOutTableview.m in Sources */,
+				00C3E9071E237F34007F22D0 /* IntegralViewController.m in Sources */,
 				EF6ECEC71E20724C004A274F /* GVColor.m in Sources */,
 				EF6ECEEC1E20724C004A274F /* ThirdDetailsCell.m in Sources */,
 				EF6ECECD1E20724C004A274F /* TAAnimatedDotView.m in Sources */,
@@ -1323,60 +1506,79 @@
 				EF6ECED41E20724C004A274F /* StarView.m in Sources */,
 				EF6ECEE91E20724C004A274F /* ShopDetailsView.m in Sources */,
 				EF6ECEE01E20724C004A274F /* PopoverAction.m in Sources */,
-				EF6ECEB51E20724C004A274F /* MyOrderTableViewCell.m in Sources */,
+				0007302B1E20775700E0DF32 /* LDKAllTableViewCell.m in Sources */,
 				EF6ECED81E20724C004A274F /* NSString+PinYin4Cocoa.m in Sources */,
 				EF6ECE8A1E20724C004A274F /* HomeModel.m in Sources */,
+				0007302D1E20775700E0DF32 /* LDKHallFoodTableview.m in Sources */,
+				00D216311E2714C100FD8E9A /* NSString+MD5.m in Sources */,
+				000730541E2077B200E0DF32 /* MyOrderTableViewCell.m in Sources */,
+				00072FF11E20771100E0DF32 /* OrderFormViewController.m in Sources */,
+				000730581E2077B200E0DF32 /* OrderDetailsView.m in Sources */,
 				EF6ECED61E20724C004A274F /* ChineseToPinyinResource.m in Sources */,
 				EF6ECE9F1E20724C004A274F /* MineViewController.m in Sources */,
 				EF6ECE8B1E20724C004A274F /* CityList.m in Sources */,
-				EF6ECEB71E20724C004A274F /* MyOrderViewController.m in Sources */,
+				00C3E9101E237FAB007F22D0 /* AboutViewController.m in Sources */,
+				00D216661E27156F00FD8E9A /* LDKAccountPasswordView.m in Sources */,
 				EF6ECEC51E20724C004A274F /* UIImage+ImageEffects.m in Sources */,
+				000730351E20775700E0DF32 /* VegetablesJudgecellCell.m in Sources */,
 				EF6ECEDA1E20724C004A274F /* PinYinForObjc.m in Sources */,
 				EF6ECE8C1E20724C004A274F /* CityCollectionCell.m in Sources */,
 				EF6ECEE51E20724C004A274F /* FirstDetailsCell.m in Sources */,
+				000730521E2077B200E0DF32 /* OnceView.m in Sources */,
 				EF6ECEA71E20724C004A274F /* OrderHeaderView.m in Sources */,
 				EF6ECED31E20724C004A274F /* StarsView.m in Sources */,
-				EF6ECEAE1E20724C004A274F /* DistributionMessageView.m in Sources */,
+				007D2DAB1E2601900012D488 /* AddAddressViewController.m in Sources */,
+				00D2165A1E27155A00FD8E9A /* AddressTableViewCell.m in Sources */,
 				EF6ECEA31E20724C004A274F /* MenuCell.m in Sources */,
 				EF6ECEFB1E20724C004A274F /* WSStarRatingView.m in Sources */,
 				EF6ECE971E20724C004A274F /* CollectionViewCell.m in Sources */,
+				00D216581E27155A00FD8E9A /* AddressHeaderView.m in Sources */,
+				00D216681E27156F00FD8E9A /* LDKMobileNumberView.m in Sources */,
 				EF6ECEF11E20724C004A274F /* ShopDetailsParam.m in Sources */,
 				EF6ECEF31E20724C004A274F /* ShopDetailsData.m in Sources */,
 				EF6ECEE31E20724C004A274F /* ShopDetailsController.m in Sources */,
+				000730561E2077B200E0DF32 /* OrderAmountView.m in Sources */,
 				EF6ECEA51E20724C004A274F /* MenuHeaderView.m in Sources */,
+				0007302A1E20775700E0DF32 /* LDKAllTableView.m in Sources */,
+				00C3E9171E238074007F22D0 /* PersonalInformationViewController.m in Sources */,
 				EF6ECED91E20724C004A274F /* PinyinFormatter.m in Sources */,
 				EF6ECEC81E20724C004A274F /* CALayer+LXAdd.m in Sources */,
 				EF6ECE931E20724C004A274F /* HotSearchTableViewCell.m in Sources */,
 				EF6ECE871E20724C004A274F /* ffViewController.m in Sources */,
+				00D2165E1E27155A00FD8E9A /* LDKMineView.m in Sources */,
+				0007302F1E20775700E0DF32 /* MyOrderFooterView.m in Sources */,
 				EF6ECEC11E20724C004A274F /* AppDelegate.m in Sources */,
+				00D2166C1E271A5700FD8E9A /* NetworkRequest.m in Sources */,
 				EF6ECE9B1E20724C004A274F /* NavgationView.m in Sources */,
+				000730331E20775700E0DF32 /* SubmitView.m in Sources */,
 				EF6ECEDD1E20724C004A274F /* ZYPinYinSearch.m in Sources */,
 				EF6ECEC61E20724C004A274F /* PurchaseCarAnimationTool.m in Sources */,
 				EF6ECEF51E20724C004A274F /* OrderParam.m in Sources */,
 				EF6ECE981E20724C004A274F /* HomePageView.m in Sources */,
 				EF6ECECF1E20724C004A274F /* TAPageControl.m in Sources */,
+				0007305A1E2077B200E0DF32 /* DistributionMessageView.m in Sources */,
 				EF6ECE891E20724C004A274F /* scanQRViewController.m in Sources */,
 				EF6ECEF61E20724C004A274F /* OrderResult.m in Sources */,
 				EF6ECE941E20724C004A274F /* SearchHistoryRecordfooter.m in Sources */,
-				EF6ECEAC1E20724C004A274F /* BottomButtonView.m in Sources */,
 				EF6ECE8F1E20724C004A274F /* DQHotSearchViewController.m in Sources */,
 				EF6ECEAA1E20724C004A274F /* OrderTableViewCell.m in Sources */,
-				EF6ECEB01E20724C004A274F /* LDKAllTableView.m in Sources */,
-				EF6ECEBC1E20724C004A274F /* OrderDetailsView.m in Sources */,
 				EF6ECEC91E20724C004A274F /* NSString+Size.m in Sources */,
 				EF6ECEDE1E20724C004A274F /* main.m in Sources */,
 				EF6ECEA01E20724C004A274F /* OrderController.m in Sources */,
 				EF6ECEE41E20724C004A274F /* CommentDetails.m in Sources */,
 				EF6ECEEE1E20724C004A274F /* TakeOutViewController.m in Sources */,
 				EF6ECEC31E20724C004A274F /* UIBarButtonItem+Extension.m in Sources */,
+				0007303C1E20777E00E0DF32 /* OrderJudgeViewController.m in Sources */,
+				0007303B1E20777E00E0DF32 /* MyOrderViewController.m in Sources */,
 				EF6ECE9A1E20724C004A274F /* HomeView.m in Sources */,
-				EF6ECEB81E20724C004A274F /* OnceView.m in Sources */,
 				EF6ECE961E20724C004A274F /* SearchRecordTableViewCell.m in Sources */,
 				EF6ECE841E20724C004A274F /* DetailsTableViewController.m in Sources */,
-				EF6ECEBF1E20724C004A274F /* VegetablesHeaderView.m in Sources */,
+				000730311E20775700E0DF32 /* MyOrderHeaderView.m in Sources */,
+				00C3E90D1E237F97007F22D0 /* LeagueViewController.m in Sources */,
 				EF6ECEEB1E20724C004A274F /* ShopDtailsHeader.m in Sources */,
 				EF6ECED51E20724C004A274F /* ChineseInclude.m in Sources */,
 				EF6ECED21E20724C004A274F /* UIView+SDExtension.m in Sources */,
+				0007305E1E2077B200E0DF32 /* VegetablesHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

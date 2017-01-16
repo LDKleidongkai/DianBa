@@ -10,6 +10,7 @@
 #import "ShopDetailsController.h"
 #import "TabBarViewController.h"
 #import "OrderController.h"
+#import "MineViewController.h"
 
 @interface AppDelegate ()
 @end
