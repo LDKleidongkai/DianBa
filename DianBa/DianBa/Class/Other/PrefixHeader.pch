@@ -45,4 +45,11 @@
 #define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 #define UIColorFromRGBA(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 blue:((float)(rgbValue & 0x0000FF))/255.0 alpha:alphaValue]
 
+
+#import "NSString+MD5.h"
+#define URL @"http://www.kdiana.com/index.php/Before/UserCenter/user_login"
+#define PHONEURL @"http://www.kdiana.com/index.php/Before/UserCenter/tel_login"
+#define PhoneCode @"http://www.kdiana.com/index.php/home/seller/sendMessage"
+#define JUDGECODE @"http://www.kdiana.com/index.php/home/seller/checkTelCaptcha"
+#define CHANGEPASSWORD @"http://www.kdiana.com/index.php/Home/Seller/updateUserPwd"
 #endif /* PrefixHeader_pch */
