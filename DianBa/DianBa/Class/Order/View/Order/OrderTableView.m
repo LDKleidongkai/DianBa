@@ -15,13 +15,13 @@
     if (self == [super initWithFrame:frame]) {
         [self addSubview:self.ordertable];
         [self addSubview:self.rowingBtn];
-        [self addSubview:self.carView];
+        [self addSubview:self.carBackgroundView];
+        [self.carBackgroundView addSubview:self.carView];
         [self addSubview:self.navigationView];
         [self.navigationView addSubview:self.nReturnBtn];
         [self.navigationView addSubview:self.nCollectionBtn];
         [self.navigationView addSubview:self.titleLabel];
         [self.carView addSubview:self.carBtn];
-        [self.carBtn addSubview:self.badgeLabel];
         [self.carView addSubview:self.rMBLabel];
         [self.carView addSubview:self.priceLabel];
         [self.carView addSubview:self.balanceBtn];
@@ -32,10 +32,16 @@
 }
 
 #pragma mark - 初始化
+- (UIView *)carBackgroundView{
+    if (_carBackgroundView == nil) {
+        _carBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 80, ScreenWidth, 80)];
+    }
+    return _carBackgroundView;
+}
 
 - (UIView *)carView{
     if (_carView == nil) {
-        _carView = [[UIView alloc] initWithFrame:CGRectMake(0, ScreenHeight - 40, ScreenWidth, 40)];
+        _carView = [[UIView alloc] initWithFrame:CGRectMake(0, 40, ScreenWidth, 40)];
         _carView.backgroundColor = [GVColor hexStringToColor:@"#666666"];
     }
     return _carView;
@@ -46,20 +52,6 @@
         [_carBtn setImage:[UIImage imageWithOriginaName:@"shopping_cart"] forState:UIControlStateNormal];
     }
     return _carBtn;
-}
--(UILabel *)badgeLabel{
-    if (_badgeLabel == nil) {
-        _badgeLabel = [[UILabel alloc] initWithFrame:CGRectMake(41, 7, 16, 16)];
-        _badgeLabel.layer.masksToBounds = YES;
-        _badgeLabel.layer.cornerRadius = 8;
-        _badgeLabel.backgroundColor = [GVColor hexStringToColor:@"#DB3F24"];
-        _badgeLabel.font = [UIFont systemFontOfSize:11];
-        _badgeLabel.textAlignment = NSTextAlignmentCenter;
-        _badgeLabel.textColor = [GVColor hexStringToColor:@"#ffffff"];
-        _badgeLabel.text = @"1";
-        _badgeLabel.hidden = YES;
-    }
-    return _badgeLabel;
 }
 -(UILabel *)rMBLabel{
     if (_rMBLabel == nil) {

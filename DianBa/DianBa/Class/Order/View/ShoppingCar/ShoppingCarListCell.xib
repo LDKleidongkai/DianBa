@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="ShoppingCarListCell">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w4-q0-sHX">
+                        <rect key="frame" x="20" y="24" width="165" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="165" id="aD2-bf-Esn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkE-rG-UZ0">
+                        <rect key="frame" x="200" y="23" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.89411764705882346" green="0.33725490196078434" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBm-6b-Afc">
+                        <rect key="frame" x="292" y="23" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="LNW-cs-EJY"/>
+                            <constraint firstAttribute="height" constant="20" id="hri-u3-bbw"/>
+                        </constraints>
+                        <state key="normal" image="subtract"/>
+                        <connections>
+                            <action selector="shopCartClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FKD-3T-cEv"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wL-fw-a3Z">
+                        <rect key="frame" x="317" y="24" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFZ-B4-A64">
+                        <rect key="frame" x="359.5" y="23" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="3FH-ho-e3w"/>
+                            <constraint firstAttribute="height" constant="20" id="5ev-O5-1uf"/>
+                        </constraints>
+                        <state key="normal" image="add"/>
+                        <connections>
+                            <action selector="shopCartClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3gR-BU-Lys"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2w4-q0-sHX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="6YG-q4-MW9"/>
+                    <constraint firstItem="PFZ-B4-A64" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8kF-Bt-BAp"/>
+                    <constraint firstItem="4wL-fw-a3Z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Uhp-Db-9KG"/>
+                    <constraint firstItem="PFZ-B4-A64" firstAttribute="leading" secondItem="4wL-fw-a3Z" secondAttribute="trailing" constant="5" id="VY1-JS-Xcv"/>
+                    <constraint firstItem="MkE-rG-UZ0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cRu-Ka-j2z"/>
+                    <constraint firstItem="dBm-6b-Afc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eaY-3L-sKd"/>
+                    <constraint firstItem="4wL-fw-a3Z" firstAttribute="leading" secondItem="dBm-6b-Afc" secondAttribute="trailing" constant="5" id="m4k-st-wle"/>
+                    <constraint firstItem="2w4-q0-sHX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vfA-XA-smt"/>
+                    <constraint firstItem="dBm-6b-Afc" firstAttribute="leading" secondItem="MkE-rG-UZ0" secondAttribute="trailing" constant="50" id="w53-9P-J3H"/>
+                    <constraint firstItem="MkE-rG-UZ0" firstAttribute="leading" secondItem="2w4-q0-sHX" secondAttribute="trailing" constant="15" id="xru-yG-IY9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addBtn" destination="PFZ-B4-A64" id="TNq-QF-wvh"/>
+                <outlet property="cutBtn" destination="dBm-6b-Afc" id="h70-SY-ycc"/>
+                <outlet property="numLabel" destination="4wL-fw-a3Z" id="b3I-YB-aU8"/>
+                <outlet property="priceLabel" destination="MkE-rG-UZ0" id="vgx-k0-FVV"/>
+                <outlet property="titleLabel" destination="2w4-q0-sHX" id="DfO-3F-7FQ"/>
+            </connections>
+            <point key="canvasLocation" x="231" y="-295"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add" width="22" height="22"/>
+        <image name="subtract" width="22" height="22"/>
+    </resources>
+</document>

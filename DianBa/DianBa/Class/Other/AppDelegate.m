@@ -7,9 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ShopDetailsController.h"
 #import "TabBarViewController.h"
-#import "OrderController.h"
+#import "PlaceOederController.h"
 
 @interface AppDelegate ()
 @end
@@ -24,8 +23,8 @@
     [self.window makeKeyAndVisible];
 
     self.window.rootViewController =[[TabBarViewController alloc] init];
-
-//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ShopDetailsController alloc] init]];
+    self.window.backgroundColor = [UIColor whiteColor];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[PlaceOederController alloc] init]];
     
     return YES;
 }

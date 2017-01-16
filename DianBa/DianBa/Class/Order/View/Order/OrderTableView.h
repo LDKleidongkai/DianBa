@@ -20,9 +20,9 @@
 @property (nonatomic, strong) UIButton *nCollectionBtn;
 @property (nonatomic, strong) UILabel *titleLabel;
 /*-------------------  购物车  -----------------------*/
+@property (nonatomic, strong) UIView *carBackgroundView;
 @property (nonatomic, strong) UIView *carView;
 @property (nonatomic, strong) UIButton *carBtn;
-@property (nonatomic, strong) UILabel *badgeLabel;
 @property (nonatomic, strong) UILabel *rMBLabel;
 @property (nonatomic, strong) UILabel *priceLabel;
 @property (nonatomic, strong) UIButton *balanceBtn;

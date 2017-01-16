@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="POThirdTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTQ-Di-ovC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="56.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qa-gC-HqU">
+                                <rect key="frame" x="12" y="9" width="31" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="请填写购物附加要求，我们会尽量安排" translatesAutoresizingMaskIntoConstraints="NO" id="6dR-ry-OSm">
+                                <rect key="frame" x="53" y="9" width="255" height="38.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6dR-ry-OSm" firstAttribute="top" secondItem="WTQ-Di-ovC" secondAttribute="top" constant="9" id="EoS-Vq-lQb"/>
+                            <constraint firstItem="6dR-ry-OSm" firstAttribute="leading" secondItem="7Qa-gC-HqU" secondAttribute="trailing" constant="10" id="PSC-qb-zUw"/>
+                            <constraint firstAttribute="trailing" secondItem="6dR-ry-OSm" secondAttribute="trailing" constant="12" id="XPd-QN-ipn"/>
+                            <constraint firstAttribute="bottom" secondItem="6dR-ry-OSm" secondAttribute="bottom" constant="9" id="c6E-1d-Ohj"/>
+                            <constraint firstItem="7Qa-gC-HqU" firstAttribute="leading" secondItem="WTQ-Di-ovC" secondAttribute="leading" constant="12" id="iF2-U0-sTi"/>
+                            <constraint firstItem="7Qa-gC-HqU" firstAttribute="top" secondItem="WTQ-Di-ovC" secondAttribute="top" constant="9" id="uxG-Dx-71L"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="WTQ-Di-ovC" secondAttribute="bottom" id="EZ3-Ei-Ld4"/>
+                    <constraint firstAttribute="trailing" secondItem="WTQ-Di-ovC" secondAttribute="trailing" id="NJe-nF-VFN"/>
+                    <constraint firstItem="WTQ-Di-ovC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pNA-9Q-6XK"/>
+                    <constraint firstItem="WTQ-Di-ovC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uJ0-kq-oCh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="0.0" y="-12"/>
+        </tableViewCell>
+    </objects>
+</document>

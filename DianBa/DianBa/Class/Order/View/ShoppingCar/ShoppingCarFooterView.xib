@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShoppingCarFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqz-TD-wlr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总计：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JS-lM-h6f">
+                            <rect key="frame" x="12" y="16" width="46" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixh-5d-NQh">
+                            <rect key="frame" x="70" y="14" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.89411764705882346" green="0.33725490196078434" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-6x-Omg">
+                            <rect key="frame" x="255" y="0.0" width="120" height="49"/>
+                            <color key="backgroundColor" red="1" green="0.72941176470588232" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="QC1-4f-mOf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="提交订单">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="5JS-lM-h6f" firstAttribute="centerY" secondItem="gqz-TD-wlr" secondAttribute="centerY" id="Iki-xh-T8h"/>
+                        <constraint firstItem="ixh-5d-NQh" firstAttribute="leading" secondItem="5JS-lM-h6f" secondAttribute="trailing" constant="12" id="Kom-jd-Uq6"/>
+                        <constraint firstItem="ixh-5d-NQh" firstAttribute="centerY" secondItem="gqz-TD-wlr" secondAttribute="centerY" id="MUu-aG-hSD"/>
+                        <constraint firstItem="JY5-6x-Omg" firstAttribute="top" secondItem="gqz-TD-wlr" secondAttribute="top" id="PRi-70-led"/>
+                        <constraint firstAttribute="bottom" secondItem="JY5-6x-Omg" secondAttribute="bottom" id="TUo-sh-AjB"/>
+                        <constraint firstAttribute="trailing" secondItem="JY5-6x-Omg" secondAttribute="trailing" id="aqA-pg-ooj"/>
+                        <constraint firstItem="5JS-lM-h6f" firstAttribute="leading" secondItem="gqz-TD-wlr" secondAttribute="leading" constant="12" id="gZc-rG-ACm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gqz-TD-wlr" secondAttribute="trailing" id="jlv-jd-lOy"/>
+                <constraint firstItem="gqz-TD-wlr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oOl-aN-AE9"/>
+                <constraint firstItem="gqz-TD-wlr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="reP-u2-BZR"/>
+                <constraint firstAttribute="bottom" secondItem="gqz-TD-wlr" secondAttribute="bottom" id="uMe-v7-2E4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="priceLabel" destination="gqz-TD-wlr" id="plt-st-JMO"/>
+                <outlet property="submitBtn" destination="gqz-TD-wlr" id="1jq-3D-eYN"/>
+            </connections>
+            <point key="canvasLocation" x="-137" y="-68"/>
+        </view>
+    </objects>
+</document>
